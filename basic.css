@@ -2,6 +2,11 @@ body {
   background-color: black;
 }
 
+#logo {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
 .center {
   display: block;
   margin-left: auto;
