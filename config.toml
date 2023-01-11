@@ -13,6 +13,10 @@ custom_css_files = ['css/custom.css']
 url = '/locations/mine/'
 title = "The Mine (Maryville)"
 
+[[params.menu.main]]
+url = '/locations/zoo/'
+title = "The Zoo (Troy)"
+
 [params.one]
 enable = true
 title = 'What is F3 SOIL?'
