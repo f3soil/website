@@ -1,0 +1,106 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'F3 SOIL'
+theme = 'spectral'
+
+[params]
+fancyTitle = 'F3 SOIL'
+description = 'F3 Workouts are:<br /><br />1. Free of Charge<br />2. Open to All Men<br />3. Held Outdoors<br />4. Peer Led<br />5. Ends with a Circle of Trust'
+body_is_markdown = true
+custom_css_files = ['css/custom.css']
+
+[[params.menu.main]]
+url = '/locations/mine/'
+title = "The Mine (Maryville)"
+
+[params.one]
+enable = true
+title = 'What is F3 SOIL?'
+body = '''
+F3 SOIL is the Southern Illinois and St. Louis Metro East region of [F3](https://f3nation.com/).
+Our locations are listed under the menu in the upper-right.
+Reach out or just show up.
+We rarely cancel a scheduled workout so it's almost guaranteed we'll be there.
+'''
+
+[params.two]
+enable = true
+
+[[params.two.section]]
+img = "img/pic01.jpg"
+title = 'What should you bring to a workout?'
+body = '''
+You should dress appropriate for the weather.
+If it's cold out be sure to layer so you can peel a layer off if you get to hot.
+Working gloves (leather, heavy-duty latex, etc.) are a good idea.
+We'll typically gift you a 35 lb cinderblock to use as a weight.
+'''
+
+[[params.two.section]]
+img = "img/pic02.jpg"
+title = 'Tortor dolore feugiat<br />elementum magna'
+body = 'Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.'
+
+[[params.two.section]]
+img = "img/pic03.jpg"
+title = 'Magna primis lobortis<br />sed ullamcorper'
+body = 'Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.'
+
+[params.three]
+enable = true
+title = 'Accumsan mus tortor nunc aliquet'
+body = '''
+Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+'''
+
+[[params.three.feature]]
+icon = "fa-paper-plane-o"
+title = "Arcu accumsan"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-laptop"
+title = "Ac Augue Eget"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-code"
+title = "Foo bar"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-headphones"
+title = "Baz kram"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-heart-o"
+title = "Some latin text"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-flag-o"
+title = "Nothing important"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[params.contact]
+enable = true
+title = "Contact"
+body = "Leave us a message."
+phone = ""
+address = ""
+email = "comms@f3soil.com"
+subject = "F3 SOIL New Contact"
+formspree_form_id = "f3soil"
+
+[params.social]
+twitter = "F3_SOIL"
+
+[languages]
+[languages.en]
+languageName = "English"
+weight = 1
+[languages.f3]
+languageName = "F3"
+weight = 2
