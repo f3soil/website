@@ -23,5 +23,5 @@ ao:
       start: 05:00
       duration: 60m
 ---
-The Zoo is located at Tri-Township Park in Troy, IL with a beatdown on Wednesday and a ruck on Friday.
-The Zoo features a zoo.
+The Zoo is located at Tri-Township Park in Troy, IL which does actually feature a zoo.
+There is nothing quite like a deep CoT being interrupted by a donkey's bellow; come check it out for yourself.

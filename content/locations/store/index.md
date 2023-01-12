@@ -24,5 +24,7 @@ ao:
       duration: 45m
 ---
 You don't go to The Store to get new clothes, just a good old-fashioned beatdown.
-You may even run into a deer or maybe even Bambi's wife.
 The Store has hillside terrain, basketball courts, a sand volleyball court, and more.
+You may even run into a deer or maybe even Bambi's wife.
+
+BTW, do not park on the front-right spots!
