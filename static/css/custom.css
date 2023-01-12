@@ -31,3 +31,11 @@ em.fineprint {
   color: rgba(255,255,255,.5);
   font-size: 0.em;
 }
+
+#menu {
+  -moz-transform: translateX(30em);
+  -webkit-transform: translateX(30em);
+  -ms-transform: translateX(30em);
+  transform: translateX(30em);
+  width: 30em;
+}

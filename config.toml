@@ -14,8 +14,28 @@ The circle F3 logo is used with the permission of <a href="https://f3nation.com/
 '''
 
 [[params.menu.main]]
+url = '/locations/black-forest/'
+title = "The Black Forest (Columbia)"
+
+[[params.menu.main]]
 url = '/locations/mine/'
 title = "The Mine (Maryville)"
+
+[[params.menu.main]]
+url = '/locations/outer-rim/'
+title = "The Outer Rim (Fairview Heights)"
+
+[[params.menu.main]]
+url = '/locations/station/'
+title = "The Station (O'Fallon)"
+
+[[params.menu.main]]
+url = '/locations/stomping-grounds/'
+title = "The Stomping Grounds (Belleville)"
+
+[[params.menu.main]]
+url = '/locations/store/'
+title = "The Store (Edwardsville)"
 
 [[params.menu.main]]
 url = '/locations/zoo/'
