@@ -13,11 +13,11 @@ The circle F3 logo is used with the permission of <a href="https://f3nation.com/
 '''
 
 [[params.menu.main]]
-url = '/locations/mine/'
+url = 'locations/mine/'
 title = "The Mine (Maryville)"
 
 [[params.menu.main]]
-url = '/locations/zoo/'
+url = 'locations/zoo/'
 title = "The Zoo (Troy)"
 
 [params.one]
