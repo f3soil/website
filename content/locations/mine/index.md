@@ -26,4 +26,5 @@ ao:
       start: 06:00
       duration: 60m
 ---
-The Mine is located at Drost Park in Maryville, IL with beatdowns on Monday, Wednesday, and Saturday.  The Mine features a seven-acre lake, several pavilions, about three miles of asphalt walking trails, picnic tables, benches, playgrounds; everything a Q needs to run a perfect boot camp workout.
+The Mine is located at Drost Park in Maryville, IL with beatdowns on Monday, Wednesday, and Saturday.
+The Mine features a seven-acre lake, several pavilions, about three miles of asphalt walking trails, picnic tables, benches, playgrounds; everything a Q needs to run a perfect boot camp workout.
