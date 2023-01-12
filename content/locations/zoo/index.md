@@ -5,7 +5,7 @@ ao:
   name: The Zoo
   location_name: Tri-Township Park
   city: Troy
-  founded: TODO
+  founded: November 9, 2022
   q: PonyKeg
   place: https://goo.gl/maps/ybBNVZHw2osLwo3Z7
   parking:

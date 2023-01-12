@@ -5,16 +5,16 @@ ao:
   name: The Station
   location_name: O'Fallon Community Park
   city: O'Fallon
-  founded: TODO
+  founded: October 17, 2022
   q: Cousin Eddie
-  place: https://goo.gl/maps/ybBNVZHw2osLwo3Z7
+  place: https://goo.gl/maps/sZ3UMCRofazeByix9
   parking:
-    lat: 38.728236606872024
-    lon: -89.89399339988782
+    lat: 38.58795787221189
+    lon: -89.9069509680879
   flag:
-    lat: 38.72835587646333
-    lon: -89.89424284532797
-  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d399.7069362810231!2d-89.89426027968696!3d38.72821306679861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673444290826!5m2!1sen!2sus
+    lat: 38.58795577565896
+    lon: -89.90713872272322
+  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3118.644829408858!2d-89.90927888465875!3d38.588026029619606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdd58f5d7aa05286!2zMzjCsDM1JzE3LjAiTiA4OcKwNTQnMjYuMSJX!5e0!3m2!1sen!2sus!4v1673546384969!5m2!1sen!2sus
   schedule:
     monday:
       start: 05:30
@@ -23,4 +23,6 @@ ao:
       start: 06:00
       duration: 60m
 ---
-TODO
+Right in the middle of the Metro East, O’Fallon is the perfect place for a beat down!
+The community park is located in the center of the community, which means easy come and easy go.
+Join us in the gloom as we keep giving it away in the Metro East.

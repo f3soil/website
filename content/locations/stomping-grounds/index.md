@@ -7,14 +7,14 @@ ao:
   city: Belleville
   founded: TODO
   q: Mustang Sally
-  place: https://goo.gl/maps/m7DVk7YcJYSt4PeH6
+  place: https://goo.gl/maps/Rx9zRTsFn7WYDMCK7
   parking:
-    lat: 38.728236606872024
-    lon: -89.89399339988782
+    lat: 38.51636235295039
+    lon: -90.01743513494282
   flag:
-    lat: 38.72835587646333
-    lon: -89.89424284532797
-  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d399.7069362810231!2d-89.89426027968696!3d38.72821306679861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673444290826!5m2!1sen!2sus
+    lat: 38.51665616218814
+    lon: -90.01723933369968
+  map_embed: https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d793.6496223235612!2d-90.01757326869652!3d38.51633192263939!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673546554219!5m2!1sen!2sus
   schedule:
     wednesday:
       start: 05:30
@@ -23,4 +23,6 @@ ao:
       start: 05:30
       duration: 45m
 ---
-TODO
+Just because workouts are held at Bicentennial Park, it doesn't mean all exercises require 200 reps.
+But don’t be surprised if 200 makes a few appearances here and there.
+With plenty of amenities like nature trails and even disc golf, beat downs are sure to be creative here.

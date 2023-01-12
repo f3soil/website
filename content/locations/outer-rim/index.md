@@ -6,8 +6,8 @@ ao:
   location_name: Moody Park
   city: Fairview Heights
   founded: TODO
-  q: Ankles
-  place: https://goo.gl/maps/ybBNVZHw2osLwo3Z7
+  q: Cousin Eddie
+  place: https://goo.gl/maps/L4QU8anB4JXJFX9o7
   parking:
     lat: 38.728236606872024
     lon: -89.89399339988782
@@ -23,4 +23,6 @@ ao:
       start: 05:30
       duration: 45m
 ---
-TODO
+The Outer Rim was the first Southern Illinois AO at the ninety-acre Moody Park (f.k.a. Longacre Park).
+There is a huge array of amenities to provide a different beat down, every single time.
+Workout Q’s have plenty of opportunity to get creative with their workouts!
