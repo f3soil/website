@@ -2,6 +2,7 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'F3 SOIL'
 theme = 'spectral'
+publishDir = 'docs'
 
 [params]
 fancyTitle = 'F3 SOIL'
