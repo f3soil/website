@@ -14,7 +14,7 @@ ao:
   flag:
     lat: 38.73056773806973
     lon: -89.9484369735436
-  map_embed: https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d799.3881182964183!2d-89.9490849199188!3d38.73051470267886!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673410022941!5m2!1sen!2sus
+  map_embed: https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d969.0478259870856!2d-89.94859647941438!3d38.730574435821445!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673557189488!5m2!1sen!2sus
   schedule:
     monday:
       start: 05:30
