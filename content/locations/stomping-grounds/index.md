@@ -25,4 +25,4 @@ ao:
 ---
 Just because workouts are held at Bicentennial Park, it doesn't mean all exercises require 200 reps.
 But don't be surprised if 200 makes a few appearances here and there.
-With plenty of amenities like nature trails and even disc golf, beat downs are sure to be creative here.
+With plenty of amenities like nature trails and even disc golf, beatdowns are sure to be creative here.

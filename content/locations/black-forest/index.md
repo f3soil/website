@@ -27,6 +27,6 @@ Can you pronounce Bolm-Schuhkraft Park?
 Well, it's a sprawling 44.5 acres park and is also known as City Park but we in F3 call it "The Black Forest".
 It's a perfect place for your morning workout!
 
-The Black Forest is well stocked for an F3 mother-of-all beat downs.
+The Black Forest is well stocked for an F3 mother-of-all beatdowns.
 It's got benches and picnic tables, 4 pavilions with tables (really useful on those wet, dreary mornings), basketball courts, batting cages, exercise stations, horseshoe pits, a 1 mile paved trail, roller hockey rink, sand volleyball court, sports fields, tennis courts, and more!
 Workout Q's can get really creative here!

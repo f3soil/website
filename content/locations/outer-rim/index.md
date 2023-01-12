@@ -24,5 +24,5 @@ ao:
       duration: 45m
 ---
 The Outer Rim was the first Southern Illinois AO at the ninety-acre Moody Park (f.k.a. Longacre Park).
-There is a huge array of amenities to provide a different beat down, every single time.
+There is a huge array of amenities to provide a different beatdown, every single time.
 Workout Q's have plenty of opportunity to get creative with their workouts!
