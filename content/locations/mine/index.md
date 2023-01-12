@@ -1,7 +1,6 @@
 ---
 title: "The Mine"
 date: 2023-01-09T20:27:34-06:00
-draft: true
 ao:
   name: The Mine
   location_name: Drost Park

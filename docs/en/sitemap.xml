@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2023-01-09T20:27:34-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="f3"
+                href="/f3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/locations/</loc>
+    <lastmod>2023-01-09T20:27:34-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/locations/mine/</loc>
+    <lastmod>2023-01-09T20:27:34-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/locations/zoo/</loc>
+    <lastmod>2023-01-09T20:27:34-06:00</lastmod>
+  </url>
+  
   <url>
     <loc>/categories/</loc>
     <xhtml:link
@@ -13,19 +44,9 @@
                 hreflang="en"
                 href="/categories/"
                 />
-  </url><url>
-    <loc>/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="f3"
-                href="/f3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -38,4 +59,5 @@
                 href="/tags/"
                 />
   </url>
+  
 </urlset>

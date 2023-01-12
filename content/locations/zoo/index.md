@@ -1,7 +1,6 @@
 ---
 title: "The Zoo"
 date: 2023-01-09T20:27:34-06:00
-draft: true
 ao:
   name: The Zoo
   location_name: Tri-Township Park
