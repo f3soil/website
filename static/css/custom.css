@@ -26,3 +26,8 @@ div.split {
 .ao-intro {
   text-align: center;
 }
+
+em.fineprint {
+  color: rgba(255,255,255,.5);
+  font-size: 0.em;
+}
