@@ -23,6 +23,6 @@ ao:
       start: 06:00
       duration: 60m
 ---
-Right in the middle of the Metro East, O’Fallon is the perfect place for a beat down!
+Right in the middle of the Metro East, O'Fallon is the perfect place for a beat down!
 The community park is located in the center of the community, which means easy come and easy go.
 Join us in the gloom as we keep giving it away in the Metro East.
