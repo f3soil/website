@@ -1,0 +1,154 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'F3 SOIL'
+theme = 'spectral'
+
+[params]
+fancyTitle = 'F3 SOIL'
+description = 'F3 Workouts are:<br /><br />1. Free of Charge<br />2. Open to All Men<br />3. Held Outdoors<br />4. Peer Led<br />5. Ends with a Circle of Trust'
+body_is_markdown = true
+custom_css_files = ['css/custom.css']
+fineprint = '''
+The circle F3 logo is used with the permission of <a href="https://f3nation.com/">F3 Nation</a> and is a registered trademark of F3 Nation, Inc.
+'''
+
+[[params.menu.main]]
+url = 'locations/mine/'
+title = "The Mine (Maryville)"
+
+[[params.menu.main]]
+url = 'locations/zoo/'
+title = "The Zoo (Troy)"
+
+[params.one]
+enable = true
+title = 'What is F3? What is F3 SOIL?'
+body = '''
+F3 SOIL is the (So)uthern (Il)linois and St. Louis Metro East region of [F3](https://f3nation.com/).
+The mission of F3 is to plant, grow, and serve small workout groups for men for the invigoration of male community leadership.
+
+Fitness: This is why we initially show up. We want to get in shape and we find that this is done better in a group. Iron sharpens iron.
+
+Fellowship: A cup of coffee is surprisingly refreshing after a workout and so is the chatter.
+
+Faith: F3 is not a religious organization but men are best when they are part of something bigger than themselves so we encourage service to your faith, family, friends, and community.
+
+'''
+
+[params.two]
+enable = true
+
+[[params.two.section]]
+img = "img/pic01.jpg"
+title = 'Where are the workouts held?'
+body = '''
+Our locations are listed under the Locations menu in the upper-right.
+Reach out (below) or just show up.
+We rarely cancel a scheduled workout so it's almost guaranteed we'll be there.
+'''
+
+[[params.two.section]]
+img = "img/pic01.jpg"
+title = 'What should I bring to a workout?'
+body = '''
+You should dress appropriate for the weather.
+If it's cold out be sure to layer so you can peel a layer off if you get to hot.
+Working gloves (leather, heavy-duty latex, etc.) are a good idea.
+We'll typically gift you a 35 lb cinderblock to use as a weight.
+'''
+
+[[params.two.section]]
+img = "img/pic02.jpg"
+title = 'What sort of exercises will I be doing?'
+body = '''
+We do standard body-weight exercises such as push-ups, jumping jacks, and squats.
+We also make use of a 35 lb cinderblock to do exercises such as overhead presses, kettlebell swings, and curls.
+'''
+
+[[params.two.section]]
+img = "img/pic03.jpg"
+title = 'How intense will the workout be?'
+body = '''
+We always say, "push yourself, don't hurt yourself."
+We encourage all participants to modify as needed, up or down, so that they get an invigorating and safe workout.
+
+The credo fo F3 is, "Leave no man behind, but leave no man where you find him."
+We strive to ensure no man is left working alone so regularly "pickup the six" by contributing reps, joining in on reps, or holding a static hold in support.
+'''
+
+[params.three]
+enable = true
+title = 'F3 Gateway Super Region'
+body = '''
+F3 SOIL is part of the F3 Gateway Super Region if you have friends or family on the Missouri-side or if you work on the Missour-side you can checkout these other regions for additional locations.
+F3 is also nationwide so if you're traveling and want to stay in your routine you may find there is a location near you; see [F3 Nation](https://f3nation.com/).
+'''
+
+[[params.three.feature]]
+title = "F3 City of St. Louis"
+body = '''
+See <a href="https://www.f3cityofstlouis.com/">F3 City of St. Louis</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 St. Louis"
+body = '''
+See <a href="https://f3stlouis.com/">F3 St. Louis</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 St. Charles"
+body = '''
+See <a href="https://www.f3stcharles.com/">F3 St. Charles</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 WashMO"
+body = '''
+See <a href="https://f3washmo.com/">F3 WashMO</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 JeffCo"
+body = '''
+See <a href="https://f3jeffco.com/">F3 JeffCo</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 Spirit of St. Louis"
+body = '''
+See <a href="https://f3spiritstl.com/">F3 Spirit of St. Louis</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 The Chuck"
+body = '''
+See <a href="https://f3thechuck.com/">F3 The Chuck</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 The Junction"
+body = '''
+Website not available yet.
+'''
+
+[params.contact]
+enable = true
+title = "Contact"
+body = "Leave us a message."
+phone = ""
+address = ""
+email = "comms@f3soil.com"
+subject = "F3 SOIL New Contact"
+formspree_form_id = "f3soil"
+
+[params.social]
+twitter = "F3_SOIL"
+
+[languages]
+[languages.en]
+languageName = "English"
+weight = 1
+[languages.f3]
+languageName = "F3"
+weight = 2
