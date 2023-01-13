@@ -5,7 +5,7 @@ ao:
   name: The Stomping Grounds
   location_name: Bicentennial Park
   city: Belleville
-  launched: TODO
+  launched: April 15, 2022
   q: Mustang Sally
   place: https://goo.gl/maps/Rx9zRTsFn7WYDMCK7
   parking:
