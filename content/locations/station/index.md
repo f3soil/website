@@ -5,7 +5,7 @@ ao:
   name: The Station
   location_name: O'Fallon Community Park
   city: O'Fallon
-  founded: October 17, 2022
+  launched: October 17, 2022
   q: Cousin Eddie
   place: https://goo.gl/maps/sZ3UMCRofazeByix9
   parking:

@@ -5,7 +5,7 @@ ao:
   name: The Store
   location_name: Joe Glik Park
   city: Edwardsville
-  founded: September 6, 2022
+  launched: September 6, 2022
   q: Wire Biter
   place: https://goo.gl/maps/baR3yweKaFma4bWF7
   parking:

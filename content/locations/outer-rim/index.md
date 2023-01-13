@@ -5,7 +5,7 @@ ao:
   name: The Outer Rim
   location_name: Moody Park
   city: Fairview Heights
-  founded: TODO
+  launched: TODO
   q: Cousin Eddie
   place: https://goo.gl/maps/L4QU8anB4JXJFX9o7
   parking:
