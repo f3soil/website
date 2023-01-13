@@ -5,7 +5,7 @@ ao:
   name: The Mine
   location_name: Drost Park
   city: Maryville
-  launched: TODO
+  launched: November 8, 2021
   q: Bambi
   place: https://goo.gl/maps/CZ2PPbxD43TFse7C7
   parking:
