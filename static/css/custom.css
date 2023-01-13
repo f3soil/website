@@ -1,5 +1,11 @@
 section#site-info {
-  display: flex;
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  section#site-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 div.split {
