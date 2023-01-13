@@ -2,7 +2,7 @@ section#site-info {
   display: grid;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   section#site-info {
     grid-template-columns: repeat(2, 1fr);
   }
