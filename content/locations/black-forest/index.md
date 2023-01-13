@@ -1,5 +1,5 @@
 ---
-title: "The Black Forest"
+title: The Black Forest
 date: 2023-01-09T20:27:34-06:00
 ao:
   name: The Black Forest

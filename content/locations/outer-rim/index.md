@@ -1,5 +1,5 @@
 ---
-title: "The Outer Rim"
+title: The Outer Rim
 date: 2023-01-09T20:27:34-06:00
 ao:
   name: The Outer Rim

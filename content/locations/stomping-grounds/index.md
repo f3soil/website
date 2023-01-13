@@ -1,5 +1,5 @@
 ---
-title: "The Stomping Grounds"
+title: The Stomping Grounds
 date: 2023-01-09T20:27:34-06:00
 ao:
   name: The Stomping Grounds
