@@ -6,7 +6,7 @@ ao:
   location_name: Joe Glik Park
   city: Edwardsville
   launched: September 6, 2022
-  q: Wire Biter
+  q: Flo-Rida
   place: https://goo.gl/maps/baR3yweKaFma4bWF7
   parking:
     lat: 38.79506562002087

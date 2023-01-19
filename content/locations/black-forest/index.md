@@ -6,7 +6,7 @@ ao:
   location_name: Bolm-Schuhkraft Memorial City Park
   city: Columbia
   launched: November 2, 2021
-  q: Cartman
+  q: Hot Lava
   place: https://goo.gl/maps/mzTey9CpAudrdpac7
   parking:
     lat: 38.448102717261975

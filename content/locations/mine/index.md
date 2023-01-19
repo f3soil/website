@@ -6,7 +6,7 @@ ao:
   location_name: Drost Park
   city: Maryville
   launched: November 8, 2021
-  q: Bambi
+  q: Paperboy
   place: https://goo.gl/maps/CZ2PPbxD43TFse7C7
   parking:
     lat: 38.7302312
