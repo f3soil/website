@@ -17,9 +17,11 @@ ao:
   map_embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d790.5689780497196!2d-89.92664304196693!3d38.794914059189075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37ffca28f3b01eaf!2zMzjCsDQ3JzQxLjAiTiA4OcKwNTUnMzMuNyJX!5e1!3m2!1sen!2sus!4v1673546690183!5m2!1sen!2sus
   schedule:
     tuesday:
+      type: Bootcamp
       start: 05:30
       duration: 45m
     thursday:
+      type: Bootcamp
       start: 05:30
       duration: 45m
 ---

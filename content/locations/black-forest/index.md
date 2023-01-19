@@ -17,9 +17,11 @@ ao:
   map_embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d468.9442788915985!2d-90.21321246927327!3d38.447948566209476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf11f75ed6ba5d5c9!2sBolm-Schuhkraft%20Memorial%20City%20Park!5e1!3m2!1sen!2sus!4v1673557352140!5m2!1sen!2sus
   schedule:
     tuesday:
+      type: Bootcamp
       start: 05:30
       duration: 45m
     thursday:
+      type: Bootcamp
       start: 05:30
       duration: 45m
 ---

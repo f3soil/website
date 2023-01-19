@@ -15,27 +15,27 @@
                         <tr><th>Parking</th><td><a href="https://www.google.com/maps/dir//{{ .Params.ao.parking.lat }},{{ .Params.ao.parking.lon }}/">Driving Directions</a></td></tr>
                         <tr><th>Flag</th><td><a href="https://www.google.com/maps/dir/{{ .Params.ao.parking.lat }},{{ .Params.ao.parking.lon }}/{{ .Params.ao.flag.lat }},{{ .Params.ao.flag.lon }}/data=!3m1!4b1!4m2!4m1!3e2">Walking Directions</a></td></tr>
                         <tr><th>Details</th><td><a href="{{ .Params.ao.place }}">Google Maps</a></td></tr>
-                        {{ if .Params.ao.schedule.monday }}
-                        <tr><th>Monday</th><td>{{ .Params.ao.schedule.monday.start }} ({{ .Params.ao.schedule.monday.duration }})</td></tr>
-                        {{ end }}
-                        {{ if .Params.ao.schedule.tuesday }}
-                        <tr><th>Tuesday</th><td>{{ .Params.ao.schedule.tuesday.start }} ({{ .Params.ao.schedule.tuesday.duration }})</td></tr>
-                        {{ end }}
-                        {{ if .Params.ao.schedule.wednesday }}
-                        <tr><th>Wednesday</th><td>{{ .Params.ao.schedule.wednesday.start }} ({{ .Params.ao.schedule.wednesday.duration }})</td></tr>
-                        {{ end }}
-                        {{ if .Params.ao.schedule.thursday }}
-                        <tr><th>Thursday</th><td>{{ .Params.ao.schedule.thursday.start }} ({{ .Params.ao.schedule.thursday.duration }})</td></tr>
-                        {{ end }}
-                        {{ if .Params.ao.schedule.friday }}
-                        <tr><th>Friday</th><td>{{ .Params.ao.schedule.friday.start }} ({{ .Params.ao.schedule.friday.duration }})</td></tr>
-                        {{ end }}
-                        {{ if .Params.ao.schedule.saturday }}
-                        <tr><th>Saturday</th><td>{{ .Params.ao.schedule.saturday.start }} ({{ .Params.ao.schedule.saturday.duration }})</td></tr>
-                        {{ end }}
-                        {{ if .Params.ao.schedule.sunday }}
-                        <tr><th>Sunday</th><td>{{ .Params.ao.schedule.sunday.start }} ({{ .Params.ao.schedule.sunday.duration }})</td></tr>
-                        {{ end }}
+                        {{ with .Params.ao.schedule.monday }}{{ if . }}
+                        <tr><th>Monday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.schedule.tuesday }}{{ if . }}
+                        <tr><th>Tuesday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.schedule.wednesday }}{{ if . }}
+                        <tr><th>Wednesday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.schedule.thursday }}{{ if . }}
+                        <tr><th>Thursday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.schedule.friday }}{{ if . }}
+                        <tr><th>Friday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.schedule.saturday }}{{ if . }}
+                        <tr><th>Saturday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.schedule.sunday }}{{ if . }}
+                        <tr><th>Sunday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
+                        {{ end }}{{ end }}
                     </table>
                 </div>
                 <div id="map-embed" class="split">
