@@ -159,9 +159,9 @@ title = "Contact"
 body = "Leave us a message."
 phone = ""
 address = ""
-email = "f3soil@groups.google.com"
+email = "f3soil@googlegroups.com"
 subject = "F3 SOIL New Contact"
-formspree_form_id = "f3soil"
+formspree_form_id = "myyazorb"
 
 [params.social]
 twitter = "F3_SOIL"
