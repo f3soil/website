@@ -9,12 +9,12 @@ ao:
   q: Cousin Eddie
   place: https://goo.gl/maps/sZ3UMCRofazeByix9
   parking:
-    lat: 38.58795787221189
-    lon: -89.9069509680879
+    lat: 38.5879843
+    lon: -89.9059159
   flag:
-    lat: 38.58795577565896
-    lon: -89.90713872272322
-  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d629.2594162237355!2d-89.90740219633636!3d38.5879396269578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673557024092!5m2!1sen!2sus
+    lat: 38.58702
+    lon: -89.90545
+  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d775.6067126958075!2d-89.90558875239073!3d38.58744826198527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1676127330425!5m2!1sen!2sus
   schedule:
     monday:
       type: Bootcamp
