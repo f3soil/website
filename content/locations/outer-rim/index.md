@@ -5,7 +5,7 @@ ao:
   name: The Outer Rim
   location_name: Moody Park
   city: Fairview Heights
-  launched: TODO
+  launched: June 15, 2021
   q: Rocky Top
   place: https://goo.gl/maps/L4QU8anB4JXJFX9o7
   parking:
