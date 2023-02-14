@@ -6,7 +6,7 @@ ao:
   location_name: Moody Park
   city: Fairview Heights
   launched: TODO
-  q: Cousin Eddie
+  q: Rocky Top
   place: https://goo.gl/maps/L4QU8anB4JXJFX9o7
   parking:
     lat: 38.582775
