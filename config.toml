@@ -60,7 +60,8 @@ Faith: F3 is not a religious organization but men are best when they are part of
 enable = true
 
 [[params.two.section]]
-img = "img/pic01.jpg"
+# https://www.zeemaps.com/map?group=4619598
+img = "img/ao_map.png"
 title = 'Where are the workouts held?'
 body = '''
 Our locations are listed under the Locations menu in the upper-right.
