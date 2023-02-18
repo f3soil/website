@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://f3soil.com/'
 languageCode = 'en-us'
 title = 'F3 SOIL'
 theme = 'spectral'
