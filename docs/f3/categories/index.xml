@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on F3 SOIL</title>
-    <link>/f3/categories/</link>
+    <link>https://f3soil.com/f3/categories/</link>
     <description>Recent content in Categories on F3 SOIL</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/f3/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://f3soil.com/f3/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

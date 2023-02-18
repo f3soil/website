@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/f3/categories/</loc>
+    <loc>https://f3soil.com/f3/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://f3soil.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="f3"
-                href="/f3/categories/"
+                href="https://f3soil.com/f3/categories/"
                 />
   </url><url>
-    <loc>/f3/</loc>
+    <loc>https://f3soil.com/f3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://f3soil.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="f3"
-                href="/f3/"
+                href="https://f3soil.com/f3/"
                 />
   </url><url>
-    <loc>/f3/tags/</loc>
+    <loc>https://f3soil.com/f3/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://f3soil.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="f3"
-                href="/f3/tags/"
+                href="https://f3soil.com/f3/tags/"
                 />
   </url>
 </urlset>

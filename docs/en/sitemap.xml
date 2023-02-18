@@ -2,65 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://f3soil.com/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="f3"
-                href="/f3/"
+                href="https://f3soil.com/f3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://f3soil.com/"
                 />
   </url><url>
-    <loc>/locations/</loc>
+    <loc>https://f3soil.com/locations/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/black-forest/</loc>
+    <loc>https://f3soil.com/locations/black-forest/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/mine/</loc>
+    <loc>https://f3soil.com/locations/mine/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/outer-rim/</loc>
+    <loc>https://f3soil.com/locations/outer-rim/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/station/</loc>
+    <loc>https://f3soil.com/locations/station/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/stomping-grounds/</loc>
+    <loc>https://f3soil.com/locations/stomping-grounds/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/store/</loc>
+    <loc>https://f3soil.com/locations/store/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/locations/zoo/</loc>
+    <loc>https://f3soil.com/locations/zoo/</loc>
     <lastmod>2023-01-09T20:27:34-06:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://f3soil.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="f3"
-                href="/f3/categories/"
+                href="https://f3soil.com/f3/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://f3soil.com/categories/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://f3soil.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="f3"
-                href="/f3/tags/"
+                href="https://f3soil.com/f3/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://f3soil.com/tags/"
                 />
   </url>
 </urlset>
