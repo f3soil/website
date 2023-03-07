@@ -1,3 +1,11 @@
+.thick-outline {
+  text-shadow: -1px 0 #2e3842, 0 1px #2e3842, 1px 0 #2e3842, 0 -1px #2e3842, 0px 0px 20px white;
+}
+
+.outline {
+  text-shadow: -1px 0 #2e3842, 0 1px #2e3842, 1px 0 #2e3842, 0 -1px #2e3842, 0px 0px 10px white;
+}
+
 section#site-info {
   display: grid;
 }
