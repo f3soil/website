@@ -1,6 +1,7 @@
 ---
 title: The Black Forest
 date: 2023-01-09T20:27:34-06:00
+image: ao_black_forest.jpg
 ao:
   name: The Black Forest
   location_name: Bolm-Schuhkraft Memorial City Park
