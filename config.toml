@@ -154,6 +154,12 @@ body = '''
 Website not available yet.
 '''
 
+[[params.three.feature]]
+title = "F3 Expedition"
+body = '''
+See <a href="https://www.f3expedition.com/">F3 Expedition</a> for more info.
+'''
+
 [params.contact]
 enable = true
 title = "Contact"
