@@ -37,6 +37,10 @@ title = "The Stomping Grounds (Belleville)"
 url = '/locations/store/'
 title = "The Store (Edwardsville)"
 
+#[[params.menu.main]]
+#url = '/locations/tower/'
+#title = "The Tower (Energy)"
+
 [[params.menu.main]]
 url = '/locations/zoo/'
 title = "The Zoo (Troy)"
