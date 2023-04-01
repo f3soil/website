@@ -22,4 +22,4 @@ ao:
       start: 05:30
       duration: 45m
 ---
-The Tower is the first AO in the Marion/Carbondale area.
+The Tower will launch on Saturday May 6th as the first AO in the Marion/Carbondale area.
