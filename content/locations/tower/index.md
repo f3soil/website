@@ -19,7 +19,7 @@ ao:
   schedule:
     thursday:
       type: Bootcamp
-      start: 05:30
+      start: 05:15
       duration: 45m
 ---
 The Tower will launch on Saturday May 6th as the first AO in the Marion/Carbondale area.
