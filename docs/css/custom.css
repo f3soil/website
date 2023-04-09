@@ -10,6 +10,15 @@ section#site-info {
   display: grid;
 }
 
+section#site-qs {
+    width: 75%;
+    margin: auto;
+}
+
+section#site-qs table caption {
+    font-weight: 600;
+}
+
 @media (min-width: 900px) {
   section#site-info {
     grid-template-columns: repeat(2, 1fr);
