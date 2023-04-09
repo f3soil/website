@@ -8,6 +8,9 @@ ao:
   city: Belleville
   launched: April 15, 2022
   q: Mustang Sally
+  qs:
+    - q: Roscoe
+      term: April 15, 2022 - July 29, 2022
   place: https://goo.gl/maps/Rx9zRTsFn7WYDMCK7
   parking:
     lat: 38.51636235295039

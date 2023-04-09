@@ -8,6 +8,11 @@ ao:
   city: Fairview Heights
   launched: June 15, 2021
   q: Rocky Top
+  qs:
+    - q: Cousin Eddie
+      term: September 11, 2022 - February 14, 2023
+    - q: Ankles
+      term: June 15, 2021 - September 11, 2022
   place: https://goo.gl/maps/L4QU8anB4JXJFX9o7
   parking:
     lat: 38.58279292743715

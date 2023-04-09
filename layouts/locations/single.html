@@ -44,6 +44,17 @@
                     </div>
                 </div>
             </section>
+            {{- if .Params.ao.qs }}
+            <section id="site-qs">
+                <table>
+                    <caption>Past Site Qs</caption>
+                    <tr><th>Site Q</th><th>Term</th></tr>
+                    {{ range $.Params.ao.qs }}
+                    <tr><td>{{ .q }}</td><td>{{ .term }}</td></tr>
+                    {{ end }}
+                </table>
+            </section>
+            {{ end -}}
         </div>
     </section>
 </article>

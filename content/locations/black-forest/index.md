@@ -8,6 +8,11 @@ ao:
   city: Columbia
   launched: November 2, 2021
   q: Ebert
+  qs:
+    - q: Hot Lava
+      term: November 8, 2022 - January 26, 2023
+    - q: CARTMAN
+      term: November 11, 2021 - November 8, 2022
   place: https://goo.gl/maps/mzTey9CpAudrdpac7
   parking:
     lat: 38.448102717261975

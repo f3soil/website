@@ -7,6 +7,11 @@ ao:
   city: Maryville
   launched: November 8, 2021
   q: Paperboy
+  qs:
+    - q: Bambi
+      term: July 25, 2022 - January 21, 2023
+    - q: Squid
+      term: December 6, 2021 - July 25, 2022
   place: https://goo.gl/maps/CZ2PPbxD43TFse7C7
   parking:
     lat: 38.7302312

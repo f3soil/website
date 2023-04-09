@@ -7,6 +7,9 @@ ao:
   city: Edwardsville
   launched: September 6, 2022
   q: Flo-Rida
+  qs:
+    - q: Wire Biter
+      term: September 6, 2022 - January 17, 2023
   place: https://goo.gl/maps/baR3yweKaFma4bWF7
   parking:
     lat: 38.79506562002087
