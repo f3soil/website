@@ -6,17 +6,34 @@
   text-shadow: -1px 0 #2e3842, 0 1px #2e3842, 1px 0 #2e3842, 0 -1px #2e3842, 0px 0px 10px white;
 }
 
+h1#current-weeks-schedule {
+  color: #4e4852;
+}
+
+h1#next-weeks-schedule {
+  color: #4e4852;
+  padding-top: 4em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 section#site-info {
   display: grid;
 }
 
 section#site-qs {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 section#site-qs table caption {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 @media (min-width: 900px) {
