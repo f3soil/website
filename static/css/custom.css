@@ -28,7 +28,7 @@ section#site-info {
 }
 
 section#site-qs {
-  width: 75%;
+  width: 100%;
   margin: auto;
 }
 
@@ -39,6 +39,9 @@ section#site-qs table caption {
 @media (min-width: 900px) {
   section#site-info {
     grid-template-columns: repeat(2, 1fr);
+  }
+  section#site-qs {
+    width: 75%;
   }
 }
 
