@@ -3,7 +3,7 @@ title: Germantown
 date: 2023-01-09T20:27:34-06:00
 ao:
   name: Germantown
-  location_name: Schoendienst Park
+  location_name: Schoendienst Park
   city: Germantown
   launched: May 1, 2023
   q: Julie the Cat
