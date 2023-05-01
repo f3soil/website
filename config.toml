@@ -78,7 +78,7 @@ We rarely cancel a scheduled workout so it's almost guaranteed we'll be there.
 '''
 
 [[params.two.section]]
-img = "img/pic01.jpg"
+img = "img/img_5555.png"
 title = 'What should I bring to a workout?'
 body = '''
 You should dress appropriate for the weather.
@@ -88,7 +88,7 @@ We'll typically gift you a 35 lb cinderblock to use for weighted exercises.
 '''
 
 [[params.two.section]]
-img = "img/pic02.jpg"
+img = "img/img_5459.jpg"
 title = 'What sort of exercises will I be doing?'
 body = '''
 We do standard body-weight exercises such as push-ups, jumping jacks, and squats.
@@ -96,7 +96,7 @@ We also make use of a 35 lb cinderblock to do exercises such as overhead presses
 '''
 
 [[params.two.section]]
-img = "img/pic03.jpg"
+img = "img/img_5324.jpg"
 title = 'How intense will the workout be?'
 body = '''
 We always say, "push yourself, don't hurt yourself."
