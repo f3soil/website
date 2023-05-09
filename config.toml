@@ -26,6 +26,10 @@ url = '/locations/mine/'
 title = "The Mine (Maryville)"
 
 [[params.menu.main]]
+url = '/locations/prost/'
+title = "Prost (Germantown)"
+
+[[params.menu.main]]
 url = '/locations/outer-rim/'
 title = "The Outer Rim (Fairview Heights)"
 
