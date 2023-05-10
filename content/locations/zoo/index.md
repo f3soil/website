@@ -7,7 +7,10 @@ ao:
   location_name: Tri-Township Park
   city: Troy
   launched: November 9, 2022
-  q: PonyKeg
+  q: low-T
+  qs:
+    - q: PonyKeg
+      term: November 9, 2022 - May 10, 2023
   place: https://goo.gl/maps/ybBNVZHw2osLwo3Z7
   parking:
     lat: 38.728236606872024
