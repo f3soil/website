@@ -17,6 +17,10 @@ ao:
     lon: -89.024921
   map_embed: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1719.8481709872053!2d-89.0260153742082!3d37.774494179037696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDQ2JzI4LjIiTiA4OcKwMDEnMjkuNyJX!5e1!3m2!1sen!2sus!4v1680382148160!5m2!1sen!2sus
   schedule:
+    monday:
+      type: Q Source Ruck
+      start: 05:15
+      duration: 45m
     thursday:
       type: Bootcamp
       start: 05:15
