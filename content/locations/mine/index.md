@@ -1,6 +1,7 @@
 ---
 title: The Mine
 date: 2023-01-09T20:27:34-06:00
+image: ao_mine.jpg
 ao:
   name: The Mine
   location_name: Drost Park
