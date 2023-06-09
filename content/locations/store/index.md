@@ -1,6 +1,7 @@
 ---
 title: The Store
 date: 2023-01-09T20:27:34-06:00
+image: ao_store.jpg
 ao:
   name: The Store
   location_name: Joe Glik Park
