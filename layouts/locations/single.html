@@ -2,7 +2,7 @@
 <article id="main">
     <header {{ with .Params.image }}style="background-image: url('{{ . }}')"{{ end }}>
         <h2 class="thick-outline">{{ .Title }}</h2>
-        <p class="outline">{{ .Params.ao.location_name }}, {{ .Params.ao.city }}, IL</p>
+        <p class="outline">{{ .Params.ao.location_name }}{{ if .Params.ao.city }}, {{ .Params.ao.city }}, IL{{ end }}</p>
     </header>
     <section class="wrapper style5">
         <div class="inner">
@@ -12,9 +12,15 @@
                     <table>
                         <tr><th>Launched</th><td>{{ .Params.ao.launched }}</td></tr>
                         <tr><th>Site Q</th><td>{{ .Params.ao.q }}</td></tr>
-                        <tr><th>Parking</th><td><a href="https://www.google.com/maps/dir//{{ .Params.ao.parking.lat }},{{ .Params.ao.parking.lon }}/">Driving Directions</a></td></tr>
-                        <tr><th>Flag</th><td><a href="https://www.google.com/maps/dir/{{ .Params.ao.parking.lat }},{{ .Params.ao.parking.lon }}/{{ .Params.ao.flag.lat }},{{ .Params.ao.flag.lon }}/data=!3m1!4b1!4m2!4m1!3e2">Walking Directions</a></td></tr>
-                        <tr><th>Q Recon</th><td><a href="{{ .Params.ao.place }}">POI Info</a></td></tr>
+                        {{ with .Params.ao.parking }}{{ if . }}
+                        <tr><th>Parking</th><td><a href="https://www.google.com/maps/dir//{{ .lat }},{{ .lon }}/">Driving Directions</a></td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao }}{{ if .flag }}
+                        <tr><th>Flag</th><td><a href="https://www.google.com/maps/dir/{{ .parking.lat }},{{ .parking.lon }}/{{ .flag.lat }},{{ .flag.lon }}/data=!3m1!4b1!4m2!4m1!3e2">Walking Directions</a></td></tr>
+                        {{ end }}{{ end }}
+                        {{ with .Params.ao.place }}{{ if . }}
+                        <tr><th>Q Recon</th><td><a href="{{ . }}">POI Info</a></td></tr>
+                        {{ end }}{{ end }}
                         {{ with .Params.ao.schedule.monday }}{{ if . }}
                         <tr><th>Monday</th><td>{{ .start }} ({{ .duration }}) {{ .type }}</td></tr>
                         {{ end }}{{ end }}

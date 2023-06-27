@@ -26,6 +26,10 @@ url = '/locations/mine/'
 title = "The Mine (Maryville)"
 
 [[params.menu.main]]
+url = '/locations/nomad/'
+title = "Nomad (MCT Trails)"
+
+[[params.menu.main]]
 url = '/locations/prost/'
 title = "Prost (Germantown)"
 
