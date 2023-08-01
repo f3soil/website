@@ -9,9 +9,9 @@ ao:
   schedule:
     tuesday:
       type: Ruck, Run, Ride
-      start: 05:00
+      start: 05:15
       duration: 60m
-    wednesday:
+    sunday:
       type: Ruck, Run, Ride
       start: 05:15
       duration: 60m
