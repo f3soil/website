@@ -13,12 +13,12 @@ ao:
       term: November 9, 2022 - May 10, 2023
   place: https://goo.gl/maps/ybBNVZHw2osLwo3Z7
   parking:
-    lat: 38.728236606872024
-    lon: -89.89399339988782
+    lat: 38.72831200051005
+    lon: -89.89507653172988
   flag:
-    lat: 38.794666
-    lon: -89.926285
-  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d399.7069362810231!2d-89.89426027968696!3d38.72821306679861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1673444290826!5m2!1sen!2sus
+    lat: 38.728511
+    lon: -89.895021
+  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d274.9082744659532!2d-89.89500919565761!3d38.72847753208137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1690853539518!5m2!1sen!2sus
   schedule:
     wednesday:
       type: Bootcamp
