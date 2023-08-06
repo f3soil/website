@@ -1,6 +1,7 @@
 ---
 title: Nomad
 date: 2023-06-27T07:00:00-05:00
+image: ao_nomad.jpg
 ao:
   name: Nomad
   location_name: MCT Trails
