@@ -82,3 +82,7 @@ em.fineprint {
   transform: translateX(30em);
   width: 30em;
 }
+
+#main > header {
+    background-attachment: initial; !important
+}
