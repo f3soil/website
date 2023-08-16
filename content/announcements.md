@@ -6,7 +6,7 @@ date: 2023-08-15:21:00-05:00
 
 - Rocky Top's daughter, Kaila, has begun a women's group modeled after F3, codenamed F4.
     They currently meet at 06:00 at several locations throughout the week.
-    If any women in your life would be interested please reach out to Kaila at kailayoung03@gmail.com or to Rocky Top to get them connected; they use Discord instead of Slack.
+    If any women in your life would be interested please reach out to Rocky Top to get them connected to Kaila.
 
 ## Highlighted Events
 
