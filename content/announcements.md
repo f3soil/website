@@ -1,6 +1,6 @@
 ---
 title: Announcements
-date: 2023-08-15:21:00-05:00
+date: 2023-08-29:18:00-05:00
 ---
 ## Special Announcements
 
@@ -10,11 +10,8 @@ date: 2023-08-15:21:00-05:00
 
 ## Highlighted Events
 
-- *August 16-13* [Stableman 7 | Sprinters Unite!](https://f3soil.slack.com/archives/C057N16ART8/p1692133641529039)
-- *August 20-26* [The Covering House 24,901-Mile Challenge](https://runsignup.com/Race/Register/RaceGroup-1318478?raceId=94518) _(Join the "F3 SoIL" team during registration.)_
-  - Stripes is organizing pre-rucks for the central AOs; see [his Slack post](https://f3soil.slack.com/archives/C04HH4YKJLF/p1692111311155779).
-  - Squid is organizing a night ruck on Friday, August 25th, 9 PM; see [his Slack post](https://f3soil.slack.com/archives/C04HR3BH9K8/p1692054825325489).
-- *September 2* Squid is organizing a 2.0 Beatdown; see [his Slack post](https://f3soil.slack.com/archives/C05K2TKMY2H/p1692055052569349).
+- *August 16-31* [Stableman 7 | Sprinters Unite!](https://f3soil.slack.com/archives/C057N16ART8/p1692133641529039)
+- *September 2* Squid is organizing a 2.0 Beatdown 09:00 at The Mine; see HC on [his PreBlast](https://f3soil.slack.com/archives/C05K2TKMY2H/p1693330086843069).
 
 ## Other Events
 
