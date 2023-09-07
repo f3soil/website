@@ -8,11 +8,11 @@ date: 2023-08-29:18:00-05:00
     They currently meet at 06:00 at several locations throughout the week.
     If any women in your life are interested, please reach out to Rocky Top to get them connected to Kaila.
 
-## Highlighted Events
+## F3 Events
 
-- *August 16-31* [Stableman 7 | Sprinters Unite!](https://f3soil.slack.com/archives/C057N16ART8/p1692133641529039)
-- *September 2* Squid is organizing a 2.0 Beatdown 09:00 at The Mine; see HC on [his PreBlast](https://f3soil.slack.com/archives/C05K2TKMY2H/p1693330086843069).
+- *September 1-15* [Stableman 8 | Shoulder Taps](https://f3soil.slack.com/archives/C057N16ART8/p1693572377002639)
+- *October 27-28* 24 Hour Beatdown
 
-## Other Events
+## Community Events
 
 - None
