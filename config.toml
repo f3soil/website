@@ -6,7 +6,7 @@ publishDir = 'docs'
 
 [params]
 fancyTitle = 'F3 SOIL'
-description = '<p>F3 Workouts are:</p><p>1. Free of Charge</p><p>2. Open to All Men</p><p>3. Held Outdoors</p><p>4. Peer Led</p><p>5. Completed with<br />a Circle of Trust</p>'
+description = '<p>F3 Workouts are:</p><p>1. Free of Charge</p><p>2. Open to All Men</p><p>3. Held Outdoors</p><p>4. Peer Led</p><p>5. Completed with <br />a Circle of Trust</p>'
 body_is_markdown = true
 custom_css_files = ['css/custom.css']
 fineprint = '''
