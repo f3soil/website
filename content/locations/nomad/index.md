@@ -28,5 +28,4 @@ AO Nomad will have a regular schedule but will “make camp” across a series o
 - [Glen Carbon West](https://goo.gl/maps/GjgEZjy7z6c7uWZC7) at the Glen Carbon Park & Ride, near IL-157 and IL-162
 - [Glen Carbon East](https://goo.gl/maps/jFHs7n4gkDgeAtq97) at the Heritage Trailhead, off of Old Troy Road and Mont Road
 - [Edwardsville](https://goo.gl/maps/15M6RbE141DKkJXz8) at the Nickel Plate Trailhead, off of IL-143 and Schwarz Road
-- [SIUE Nature Preserve Loop](https://maps.app.goo.gl/hNvDPkbygswszeKp9) off Stadium Drive at SIUE.  Trails enter the preserve near a log cabin situated along Stadium Drive across from the Ralph Korte Stadium. The stadium lots can be used for parking for this access point.
 - [Horseshoe Lake](https://maps.app.goo.gl/ahF52iR6eQPC5qvu5): In Horseshoe Lake State Park off of 111 near the Horseshoe Lake State Park Trail. Advise not to use MCT Schoolhouse Trail due to heavy arachnid population.
