@@ -4,9 +4,8 @@ date: 2023-09-08:18:00-05:00
 ---
 ## F3 Announcements
 
-- *September 1-15* [Stableman 8 | Shoulder Taps](https://f3soil.slack.com/archives/C057N16ART8/p1693572377002639)
-- *September 13-27* [F3 SOIL Gear Pre-Order](https://f3.mudgear.com/products/f3-the-soil-pre-order-september-2023)
 - *October 27-28* 24 Hour Beatdown
+- [Join](https://join.slack.com/t/stlgatewaymega-region/shared_invite/zt-24kabxqb5-aJ_0tNLjTkqcTt4zJruh6A) (valid until 11/2/23) the new F3 StL Gateway Mega-Region Slack
 
 ## Community Announcements
 
