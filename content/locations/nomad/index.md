@@ -9,11 +9,11 @@ ao:
   q: TBD
   schedule:
     tuesday:
-      type: Ruck, Run, Ride
+      type: Ruck
       start: 05:15
       duration: 90m
     sunday:
-      type: Ruck, Run, Ride
+      type: Ruck
       start: 05:15
       duration: 90m
 ---
