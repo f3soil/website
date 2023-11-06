@@ -7,7 +7,10 @@ ao:
   location_name: O'Fallon Community Park
   city: O'Fallon
   launched: October 17, 2022
-  q: Cousin Eddie
+  q: Roughage
+  qs:
+    - q: Cousin Eddie
+      term: October 17, 2022 - November 4, 2023
   place: https://goo.gl/maps/sZ3UMCRofazeByix9
   parking:
     lat: 38.5879843
