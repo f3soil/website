@@ -4,7 +4,8 @@ date: 2023-09-08:18:00-05:00
 ---
 ## F3 Announcements
 
-- *October 27-28* 24 Hour Beatdown
+- *December 16* Mini-Convergence at The Station
+- *January 1* Possible CSAUP near The Tower
 
 ## Community Announcements
 
