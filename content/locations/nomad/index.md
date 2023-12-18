@@ -20,5 +20,5 @@ ao:
 AO Nomad is focused on providing the option to Ruck.
 However, unlike most AOs, Nomad is not held at a single location but instead meets at these locations on their specific day:
 
-* Tuesday in [Glen Carbon](https://maps.app.goo.gl/jFHs7n4gkDgeAtq97) at the Heritage Trailhead, at Old Troy Road and Mont Road
+* Tuesday in [Glen Carbon](https://goo.gl/maps/jFHs7n4gkDgeAtq97) at the Heritage Trailhead, at Old Troy Road and Mont Road
 * Sunday at [O’Fallon](https://maps.app.goo.gl/NemGrzRpdcMkccc47) at Rock Springs Park
