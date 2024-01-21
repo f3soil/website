@@ -204,6 +204,7 @@ formspree_form_id = "myyazorb"
 
 [params.social]
 twitter = "F3_SOIL"
+facebook = "F3SOIL"
 
 [languages]
 [languages.en]
