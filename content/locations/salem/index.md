@@ -1,10 +1,10 @@
 ---
-title: 'Black Ops: Fairfield'
+title: 'Black Ops: Salem'
 date: 2024-01-10T19:15:00-06:00
 ao:
-  name: 'Black Ops: Fairfield'
-  location_name: Leo French Park
-  city: Fairfield
+  name: 'Black Ops: Salem'
+  location_name: ???
+  city: Salem
   launched: December 4, 2023
   q: Plankton
   place: https://maps.app.goo.gl/guUkFCksfxgoAPQC7
@@ -25,5 +25,5 @@ ao:
       start: 05:30
       duration: 45m
 ---
-Fairfield is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
+Salem is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
 Come join us and help build something to serve your community!

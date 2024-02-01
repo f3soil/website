@@ -58,16 +58,16 @@ url = '/locations/zoo/'
 title = "The Zoo (Troy)"
 
 [[params.menu.main]]
-url = '/locations/fairfield/'
-title = "Black Ops: Fairfield (Beta)"
-
-[[params.menu.main]]
 url = '/locations/granite-city/'
 title = "Black Ops: Granite City (Beta)"
 
 [[params.menu.main]]
 url = '/locations/herrin/'
 title = "Black Ops: Herrin (Beta)"
+#
+#[[params.menu.main]]
+#url = '/locations/salem/'
+#title = "Black Ops: Salem (Beta)"
 
 [[params.menu.main]]
 url = '/locations/st-jacob/'
