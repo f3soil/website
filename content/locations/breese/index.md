@@ -3,18 +3,18 @@ title: 'Black Ops: Breese'
 date: 2024-02-06T19:15:00-06:00
 ao:
   name: 'Black Ops: Breese'
-  location_name: Northside Park
+  location_name: Breese Soccer Park
   city: Breese
-  launched: TBD
+  launched: February 13, 2024
   q: O’Donk
-  place: https://maps.app.goo.gl/YAYp3qYx5a6Razb88
+  place: https://maps.app.goo.gl/pSdA16H7jWugr9kG8
   parking:
-    lat: 38.6168650
-    lon: -89.5280097
+    lat: 38.626650354531066
+    lon: -89.53197246772186
   flag:
-    lat: 38.6170025
-    lon: -89.5285840
-  map_embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112.5322090041748!2d-89.52945941345445!3d38.616876315530874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88767972952198c5%3A0x42bf6f70c773f321!2sBreese%20Northside%20Park!5e1!3m2!1sen!2sus!4v1707271709995!5m2!1sen!2sus
+    lat: 38.626867387498166
+    lon: -89.53197246772186
+  map_embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.763542950119!2d-89.53239274386013!3d38.626246894056145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8876785b68c5000d%3A0x245c5d93b9263c0c!2sBreese%20Soccer%20Park!5e1!3m2!1sen!2sus!4v1707352505796!5m2!1sen!2sus
   schedule:
     tuesday:
       type: Bootcamp
