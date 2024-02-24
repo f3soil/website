@@ -62,6 +62,10 @@ url = '/locations/breese/'
 title = "Black Ops: Breese (Beta)"
 
 [[params.menu.main]]
+url = '/locations/carbondale/'
+title = "Black Ops: Carbondale (Beta)"
+
+[[params.menu.main]]
 url = '/locations/granite-city/'
 title = "Black Ops: Granite City (Beta)"
 
