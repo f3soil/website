@@ -1,9 +1,9 @@
 ---
-title: 'Black Ops: St. Jacob'
+title: 'The Iron Horse'
 date: 2024-01-10T19:15:00-06:00
 ao:
-  name: 'Black Ops: St. Jacob'
-  location_name: St. Jacon Township Park
+  name: 'The Iron Horse'
+  location_name: St. Jacob Township Park
   city: St. Jacob
   launched: December 4, 2023
   q: Sonic
@@ -25,5 +25,3 @@ ao:
       start: 05:00
       duration: 45m
 ---
-St. Jacob is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
-Come join us and help build something to serve your community!

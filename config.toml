@@ -22,6 +22,10 @@ url = '/locations/black-forest/'
 title = "The Black Forest (Columbia)"
 
 [[params.menu.main]]
+url = '/locations/iron-horse/'
+title = "The Iron Horse (St. Jacob)"
+
+[[params.menu.main]]
 url = '/locations/mine/'
 title = "The Mine (Maryville)"
 
@@ -76,10 +80,6 @@ title = "Black Ops: Herrin (Beta)"
 #[[params.menu.main]]
 #url = '/locations/salem/'
 #title = "Black Ops: Salem (Beta)"
-
-[[params.menu.main]]
-url = '/locations/st-jacob/'
-title = "Black Ops: St. Jacob (Beta)"
 
 [params.one]
 enable = true
