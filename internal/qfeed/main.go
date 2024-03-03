@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/gorilla/feeds"
@@ -21,6 +22,7 @@ func main() {
 func GenerateFeed() feeds.Feed {
 	startDate := time.Date(time.Now().Year(), 1, 1, 0, 0, 0, 0, time.UTC)
 	feed := feeds.Feed{
+		Id:          "f3soil.com/rss",
 		Title:       "F3 QSource",
 		Subtitle:    "The F3 Manual of Virtuous Leadership",
 		Description: "An annual feed for F3 QSource",
@@ -42,14 +44,14 @@ func GenerateFeed() feeds.Feed {
 		weekNumber = len(qPoints)
 	}
 	for i, q := range qPoints[0:qPointsIndex] {
+		qPointPubDate := startDate.Add(time.Duration(i) * 7 * 24 * time.Hour)
 		feed.Items = append(feed.Items, &feeds.Item{
-			Created: startDate.Add(time.Duration(i+1) * 7 * 24 * time.Hour),
+			Id:      strings.TrimSuffix(strings.TrimPrefix(q.Link, "https://"), "/"),
+			Created: qPointPubDate,
+			Updated: qPointPubDate,
 			Title:   q.Title,
 			Link: &feeds.Link{
-				Href:   q.Link,
-				Rel:    "",
-				Type:   "",
-				Length: "",
+				Href: q.Link,
 			},
 		})
 	}
