@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/gorilla/feeds"
+	"github.com/samber/lo"
 )
 
 func main() {
@@ -45,7 +46,7 @@ func GenerateFeed() feeds.Feed {
 	}
 	for i, q := range qPoints[0:qPointsIndex] {
 		qPointPubDate := startDate.Add(time.Duration(i) * 7 * 24 * time.Hour)
-		feed.Items = append(feed.Items, &feeds.Item{
+		item := feeds.Item{
 			Id:      strings.TrimSuffix(strings.TrimPrefix(q.Link, "https://"), "/"),
 			Created: qPointPubDate,
 			Updated: qPointPubDate,
@@ -53,14 +54,22 @@ func GenerateFeed() feeds.Feed {
 			Link: &feeds.Link{
 				Href: q.Link,
 			},
-		})
+		}
+		if len(q.Socratics) > 0 {
+			lines := lo.Map(q.Socratics, func(item string, index int) string {
+				return "<li>" + item + "</li>"
+			})
+			item.Content += "<ul>\n" + strings.Join(lines, "\n") + "\n</ul>"
+		}
+		feed.Items = append(feed.Items, &item)
 	}
 	return feed
 }
 
 type QPoint struct {
-	Title string
-	Link  string
+	Title     string
+	Link      string
+	Socratics []string
 }
 
 var qPoints = []QPoint{
@@ -103,6 +112,11 @@ var qPoints = []QPoint{
 	{
 		Title: "Queen (Q1.3)",
 		Link:  "https://f3nation.com/q/queen/",
+		Socratics: []string{
+			"Can a good exercise routine overcome a bad diet?",
+			"Are some foods bad?",
+			"What leads a man to descend into gluttony?",
+		},
 	},
 	{
 		Title: "Jester (Q1.4)",
@@ -267,5 +281,10 @@ var qPoints = []QPoint{
 	{
 		Title: "Lizard Building (Q4.10)",
 		Link:  "https://f3nation.com/q/lizard-building/",
+		Socratics: []string{
+			"What is the glue that holds an Effective Organization together?",
+			"What does the Organizational chart of an Effective Organization look like?",
+			"How does a Leader maintain control over an Effective Organization?",
+		},
 	},
 }
