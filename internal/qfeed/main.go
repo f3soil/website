@@ -19,11 +19,19 @@ func main() {
 }
 
 func GenerateFeed() feeds.Feed {
+	startDate := time.Date(time.Now().Year(), 1, 1, 0, 0, 0, 0, time.UTC)
 	feed := feeds.Feed{
-		Title: "F3 QSource",
+		Title:       "F3 QSource",
+		Subtitle:    "The F3 Manual of Virtuous Leadership",
+		Description: "An annual feed for F3 QSource",
+		Created:     startDate,
+		Updated:     time.Now().UTC(),
+		Author: &feeds.Author{
+			Name:  "Rowengartner",
+			Email: "nnutter@duck.com",
+		},
 	}
 
-	startDate := time.Date(time.Now().Year(), 1, 1, 0, 0, 0, 0, time.UTC)
 	elapsed := time.Since(startDate)
 	weekNumber := int(elapsed/(7*24*time.Hour)) + 1
 	qPointsIndex := weekNumber + 1
@@ -33,9 +41,10 @@ func GenerateFeed() feeds.Feed {
 	if weekNumber >= len(qPoints) {
 		weekNumber = len(qPoints)
 	}
-	for _, q := range qPoints[0:qPointsIndex] {
+	for i, q := range qPoints[0:qPointsIndex] {
 		feed.Items = append(feed.Items, &feeds.Item{
-			Title: q.Title,
+			Created: startDate.Add(time.Duration(i+1) * 7 * 24 * time.Hour),
+			Title:   q.Title,
 			Link: &feeds.Link{
 				Href:   q.Link,
 				Rel:    "",
