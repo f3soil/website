@@ -22,6 +22,8 @@ func main() {
 
 func GenerateFeed() feeds.Feed {
 	startDate := time.Date(time.Now().Year(), 1, 1, 0, 0, 0, 0, time.UTC)
+	publishInterval := 7 * 24 * time.Hour
+
 	feed := feeds.Feed{
 		Id:          "f3soil.com/rss",
 		Title:       "F3 QSource",
@@ -36,16 +38,9 @@ func GenerateFeed() feeds.Feed {
 	}
 
 	elapsed := time.Since(startDate)
-	weekNumber := int(elapsed/(7*24*time.Hour)) + 1
-	qPointsIndex := weekNumber + 1
-	if weekNumber < 1 {
-		weekNumber = 1
-	}
-	if weekNumber >= len(qPoints) {
-		weekNumber = len(qPoints)
-	}
+	qPointsIndex := int(elapsed/publishInterval) % len(qPoints)
 	for i, q := range qPoints[0:qPointsIndex] {
-		qPointPubDate := startDate.Add(time.Duration(i) * 7 * 24 * time.Hour)
+		qPointPubDate := startDate.Add(time.Duration(i) * publishInterval)
 		item := feeds.Item{
 			Id:      strings.TrimSuffix(strings.TrimPrefix(q.Link, "https://"), "/"),
 			Created: qPointPubDate,
