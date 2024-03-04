@@ -32,7 +32,7 @@ func GenerateFeed() feeds.Feed {
 		Created:     startDate,
 		Updated:     time.Now().UTC(),
 		Author: &feeds.Author{
-			Name:  "Rowengartner",
+			Name:  "Rowengartner (F3 SOIL)",
 			Email: "nnutter@duck.com",
 		},
 	}
