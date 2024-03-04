@@ -22,7 +22,7 @@ func main() {
 
 func GenerateFeed() feeds.Feed {
 	startDate := time.Date(time.Now().Year(), 1, 1, 0, 0, 0, 0, time.UTC)
-	publishInterval := 7 * 24 * time.Hour
+	publishInterval := 24 * time.Hour
 
 	feed := feeds.Feed{
 		Id:          "f3soil.com/rss",
