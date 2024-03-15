@@ -35,6 +35,9 @@ func GenerateFeed() feeds.Feed {
 			Name:  "Rowengartner (F3 SOIL)",
 			Email: "nnutter@duck.com",
 		},
+		Link: &feeds.Link{
+			Href: "https://f3soil.com/rss",
+		},
 	}
 
 	elapsed := time.Since(startDate)
