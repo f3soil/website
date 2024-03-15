@@ -44,6 +44,9 @@ func GenerateFeed() feeds.Feed {
 	qPointsIndex := int(elapsed/publishInterval) % len(qPoints)
 	for i, q := range qPoints[0:qPointsIndex] {
 		qPointPubDate := startDate.Add(time.Duration(i) * publishInterval)
+		if i == (qPointsIndex - 1) {
+			qPointPubDate = now.UTC()
+		}
 		item := feeds.Item{
 			Id:      q.Link,
 			Created: qPointPubDate,
