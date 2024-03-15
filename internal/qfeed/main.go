@@ -12,7 +12,7 @@ import (
 
 func main() {
 	feed := GenerateFeed()
-	rss, err := feed.ToRss()
+	rss, err := feed.ToAtom()
 	if err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "ERROR: %s", err.Error())
 		os.Exit(1)
