@@ -22,7 +22,7 @@ func main() {
 
 func GenerateFeed() feeds.Feed {
 	now := time.Now()
-	startDate := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC).Add(-2 * 24 * time.Hour)
+	startDate := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC).Add(-3 * 24 * time.Hour)
 	publishInterval := 24 * time.Hour
 
 	feed := feeds.Feed{
