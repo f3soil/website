@@ -22,7 +22,11 @@ func main() {
 
 func GenerateFeed() feeds.Feed {
 	now := time.Now()
-	firstOfTheYear := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC)
+	chicago, err := time.LoadLocation("America/Chicago")
+	if err != nil {
+		panic(err)
+	}
+	firstOfTheYear := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, chicago)
 	startDate := firstOfTheYear
 	for {
 		if startDate.Weekday() == time.Sunday {
