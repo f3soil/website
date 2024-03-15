@@ -29,7 +29,7 @@ func GenerateFeed() feeds.Feed {
 		Title:       "F3 QSource",
 		Subtitle:    "The F3 Manual of Virtuous Leadership",
 		Description: "An annual feed for F3 QSource",
-		Created:     time.Now().UTC(),
+		Created:     startDate,
 		Updated:     time.Now().UTC(),
 		Author: &feeds.Author{
 			Name:  "Rowengartner (F3 SOIL)",
