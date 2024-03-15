@@ -45,7 +45,7 @@ func GenerateFeed() feeds.Feed {
 	for i, q := range qPoints[0:qPointsIndex] {
 		qPointPubDate := startDate.Add(time.Duration(i) * publishInterval)
 		item := feeds.Item{
-			Id:      strings.TrimSuffix(strings.TrimPrefix(q.Link, "https://"), "/"),
+			Id:      q.Link,
 			Created: qPointPubDate,
 			Updated: qPointPubDate,
 			Title:   q.Title,
