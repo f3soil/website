@@ -70,10 +70,6 @@ url = '/locations/carbondale/'
 title = "Black Ops: Carbondale (Beta)"
 
 [[params.menu.main]]
-url = '/locations/granite-city/'
-title = "Black Ops: Granite City (Beta)"
-
-[[params.menu.main]]
 url = '/locations/herrin/'
 title = "Black Ops: Herrin (Beta)"
 #
