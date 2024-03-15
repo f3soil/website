@@ -22,8 +22,8 @@ func main() {
 
 func GenerateFeed() feeds.Feed {
 	now := time.Now()
-	startDate := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC).Add(-3 * 24 * time.Hour)
-	publishInterval := 24 * time.Hour
+	startDate := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC)
+	publishInterval := 7 * 24 * time.Hour
 
 	feed := feeds.Feed{
 		Title:       "F3 QSource",
@@ -41,12 +41,9 @@ func GenerateFeed() feeds.Feed {
 	}
 
 	elapsed := time.Since(startDate)
-	qPointsIndex := int(elapsed/publishInterval) % len(qPoints)
+	qPointsIndex := (int(elapsed/publishInterval) + 1) % len(qPoints)
 	for i, q := range qPoints[0:qPointsIndex] {
 		qPointPubDate := startDate.Add(time.Duration(i) * publishInterval)
-		if i == (qPointsIndex - 1) {
-			qPointPubDate = now.UTC()
-		}
 		item := feeds.Item{
 			Id:      q.Link,
 			Created: qPointPubDate,
