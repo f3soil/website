@@ -14,7 +14,7 @@ ao:
   flag:
     lat: 37.81504490807674
     lon: -89.0074130041207
-  map_embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d777.8084589603371!2d-89.0090644526392!3d37.81553559936582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887725aa7b5dee07%3A0xb6b0e05d17948042!2sHerrin%20Track!5e1!3m2!1sen!2sus!4v1705006624911!5m2!1sen!2sus
+  map_embed: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2097.185419289105!2d-89.00730950925376!3d37.81500901086974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1710468104892!5m2!1sen!2sus
   schedule:
     saturday:
       type: Run
