@@ -26,7 +26,6 @@ func GenerateFeed() feeds.Feed {
 	publishInterval := 24 * time.Hour
 
 	feed := feeds.Feed{
-		Id:          fmt.Sprintf("f3soil.com/rss@%d", now.UnixMilli()),
 		Title:       "F3 QSource",
 		Subtitle:    "The F3 Manual of Virtuous Leadership",
 		Description: "An annual feed for F3 QSource",
