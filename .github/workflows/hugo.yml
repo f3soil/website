@@ -54,7 +54,7 @@ jobs:
       - name: Generate RSS Feed
         run: |
           cd ./internal/qfeed \
-          && go run . > ../../docs/feed.atom
+          && go run . > ../../docs/qfeed
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
