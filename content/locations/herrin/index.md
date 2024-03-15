@@ -19,7 +19,7 @@ ao:
     saturday:
       type: Run
       start: 06:00
-      duration: 45m
+      duration: 60m
 ---
 Herrin is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
 Come join us and help build something to serve your community!
