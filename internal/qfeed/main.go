@@ -22,7 +22,14 @@ func main() {
 
 func GenerateFeed() feeds.Feed {
 	now := time.Now()
-	startDate := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC)
+	firstOfTheYear := time.Date(now.Year(), 1, 1, 0, 0, 0, 0, time.UTC)
+	startDate := firstOfTheYear
+	for {
+		if startDate.Weekday() == time.Sunday {
+			break
+		}
+		startDate = startDate.Add(24 * time.Hour)
+	}
 	publishInterval := 7 * 24 * time.Hour
 
 	feed := feeds.Feed{
@@ -37,6 +44,18 @@ func GenerateFeed() feeds.Feed {
 		},
 		Link: &feeds.Link{
 			Href: "https://f3soil.com/rss",
+		},
+		Items: []*feeds.Item{
+			{
+				Id:      "https://f3nation.com/q/",
+				Created: firstOfTheYear,
+				Updated: firstOfTheYear,
+				Title:   "QSource The F3 Manual of Virtuous Leadership",
+				Link: &feeds.Link{
+					Href: "https://f3nation.com/q/",
+				},
+				Content: "Also, download the <a href=\"https://f3nation.com/qsource-best-practices/\">\"Best Practice Manual\"</a>.",
+			},
 		},
 	}
 
@@ -71,13 +90,6 @@ type QPoint struct {
 }
 
 var qPoints = []QPoint{
-	{
-		Title: "QSource The F3 Manual of Virtuous Leadership",
-		Link:  "https://f3nation.com/q/",
-		Socratics: []string{
-			"Also, download the <a href=\"https://f3nation.com/qsource-best-practices/\">\"Best Practice Manual\"</a>.",
-		},
-	},
 	{
 		Title: "Disruption (F1)",
 		Link:  "https://f3nation.com/q/disruption/",
