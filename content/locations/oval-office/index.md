@@ -1,8 +1,8 @@
 ---
-title: 'Black Ops: Herrin'
+title: The Oval Office
 date: 2024-01-10T19:15:00-06:00
 ao:
-  name: 'Black Ops: Herrin'
+  name: The Oval Office
   location_name: Herrin Track
   city: Herrin
   launched: January 6, 2024
@@ -21,5 +21,4 @@ ao:
       start: 06:00
       duration: 60m
 ---
-Herrin is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
-Come join us and help build something to serve your community!
+Come join us for a run workout in the morning gloom! 
