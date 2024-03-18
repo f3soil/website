@@ -5,7 +5,7 @@ ao:
   name: 'The Iron Horse'
   location_name: St. Jacob Township Park
   city: St. Jacob
-  launched: December 4, 2023
+  launched: February 29, 2024
   q: Sonic
   place: https://maps.app.goo.gl/Za3bKXxkUyhDpL389
   parking:
