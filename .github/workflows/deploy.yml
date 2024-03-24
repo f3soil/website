@@ -37,7 +37,6 @@ jobs:
           submodules: recursive
       - uses: actions/setup-go@v5
         with:
-          go-version: '>=1.22.0'
           go-version-file: internal/qfeed/go.mod
       - name: Install Hugo CLI
         run: |
