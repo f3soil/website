@@ -86,3 +86,7 @@ em.fineprint {
 #main > header {
     background-attachment: initial; !important
 }
+
+#header nav > ul > li > a.menuToggle span {
+  display: inline !important;
+}
