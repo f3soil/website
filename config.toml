@@ -13,10 +13,6 @@ fineprint = '''
 The circle F3 logo is used with the permission of <a href="https://f3nation.com/">F3 Nation</a> and is a registered trademark of F3 Nation, Inc.
 '''
 
-#[[params.menu.main]]
-#url = '/overview/'
-#title = "Overview"
-
 [[params.menu.main]]
 url = '/locations/black-forest/'
 title = "The Black Forest (Columbia)"
