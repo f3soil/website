@@ -151,6 +151,18 @@ See <a href="https://f3stlouis.com/">F3 St. Louis</a> for more info.
 '''
 
 [[params.three.feature]]
+title = "F3 SoCo"
+body = '''
+See <a href="https://www.facebook.com/profile.php?id=61552638899167">F3 SoCo</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 NoCo"
+body = '''
+See <a href="https://www.facebook.com/profile.php?id=100095183142148">F3 NoCo</a> for more info.
+'''
+
+[[params.three.feature]]
 title = "F3 St. Charles"
 body = '''
 See <a href="https://www.f3stcharles.com/">F3 St. Charles</a> for more info.
@@ -190,6 +202,24 @@ Website not available yet.
 title = "F3 Expedition"
 body = '''
 See <a href="https://www.f3expedition.com/">F3 Expedition</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 Meramec"
+body = '''
+See <a href="https://www.facebook.com/profile.php?id=100091593243195">F3 Meramec</a> for more info.
+'''
+
+[[params.three.feature]]
+title = "F3 The Wolf PAX"
+body = '''
+Website not available yet.
+'''
+
+[[params.three.feature]]
+title = "F3 The Kingdom"
+body = '''
+See <a href="https://www.facebook.com/profile.php?id=61556497686836">F3 The Kingdom</a> for more info.
 '''
 
 [params.contact]
