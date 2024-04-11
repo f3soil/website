@@ -7,8 +7,10 @@ ao:
   location_name: Drost Park
   city: Maryville
   launched: November 8, 2021
-  q: Paperboy
+  q: Fixodent
   qs:
+    - q: Paperboy
+      term: January 21, 2023 - April 2, 2024
     - q: Bambi
       term: July 25, 2022 - January 21, 2023
     - q: Squid
