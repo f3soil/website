@@ -42,6 +42,10 @@ url = '/locations/oval-office/'
 title = "The Oval Office (Herrin)"
 
 [[params.menu.main]]
+url = '/locations/pitch/'
+title = "The Pitch"
+
+[[params.menu.main]]
 url = '/locations/station/'
 title = "The Station (O'Fallon)"
 
@@ -60,10 +64,6 @@ title = "The Tower (Energy)"
 [[params.menu.main]]
 url = '/locations/zoo/'
 title = "The Zoo (Troy)"
-
-[[params.menu.main]]
-url = '/locations/breese/'
-title = "Black Ops: Breese (Beta)"
 
 [[params.menu.main]]
 url = '/locations/carbondale/'

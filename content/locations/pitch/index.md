@@ -1,11 +1,11 @@
 ---
-title: 'Black Ops: Breese'
+title: The Pitch
 date: 2024-02-06T19:15:00-06:00
 ao:
-  name: 'Black Ops: Breese'
+  name: The Pitch
   location_name: Breese Soccer Park
   city: Breese
-  launched: February 13, 2024
+  launched: April 13, 2024
   q: O’Donk
   place: https://maps.app.goo.gl/pSdA16H7jWugr9kG8
   parking:
@@ -25,5 +25,4 @@ ao:
       start: 05:00
       duration: 45m
 ---
-Breese is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
 Come join us and help build something to serve your community!
