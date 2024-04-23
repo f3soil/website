@@ -1,11 +1,11 @@
 ---
-title: 'Black Ops: Carbondale'
+title: Rocky
 date: 2024-02-24T11:15:00-06:00
 ao:
-  name: 'Black Ops: Carbondale'
+  name: Rocky
   location_name: SIUC
   city: Carbondale
-  launched: March 19, 2024
+  launched: April 27, 2024
   q: Operation
   place: https://maps.app.goo.gl/fLM2nuDqGdB4wRSL7
   parking:
@@ -21,5 +21,3 @@ ao:
       start: 05:15
       duration: 45m
 ---
-Carbondale is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
-Come join us, starting March 19th (2024), and help build something to serve your community!

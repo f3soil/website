@@ -46,6 +46,10 @@ url = '/locations/pitch/'
 title = "The Pitch (Breese)"
 
 [[params.menu.main]]
+url = '/locations/rocky/'
+title = "Rocky (Carbondale)"
+
+[[params.menu.main]]
 url = '/locations/station/'
 title = "The Station (O'Fallon)"
 
@@ -64,10 +68,6 @@ title = "The Tower (Energy)"
 [[params.menu.main]]
 url = '/locations/zoo/'
 title = "The Zoo (Troy)"
-
-[[params.menu.main]]
-url = '/locations/carbondale/'
-title = "Black Ops: Carbondale (Beta)"
 
 #[[params.menu.main]]
 #url = '/locations/salem/'
