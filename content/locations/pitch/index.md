@@ -1,6 +1,7 @@
 ---
 title: The Pitch
 date: 2024-02-06T19:15:00-06:00
+image: pitch.jpg
 ao:
   name: The Pitch
   location_name: Breese Soccer Park
