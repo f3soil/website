@@ -1,6 +1,7 @@
 ---
 title: 'The Iron Horse'
 date: 2024-01-10T19:15:00-06:00
+image: ao_iron-horse.jpg
 ao:
   name: 'The Iron Horse'
   location_name: St. Jacob Township Park
