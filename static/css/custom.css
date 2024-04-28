@@ -81,6 +81,23 @@ em.fineprint {
   -ms-transform: translateX(30em);
   transform: translateX(30em);
   width: 30em;
+  background: #a6a6a6;
+}
+
+#menu li.black {
+  color: #1d2a58 !important;
+}
+
+#menu li.maroon {
+  color: #5f0f2d !important;
+}
+
+#menu li.orange {
+  color: #dc6c3d !important;
+}
+
+#menu li.purple {
+  color: #25256a !important;
 }
 
 #main > header {

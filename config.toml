@@ -14,60 +14,69 @@ The circle F3 logo is used with the permission of <a href="https://f3nation.com/
 '''
 
 [[params.menu.main]]
-url = '/locations/black-forest/'
-title = "The Black Forest (Columbia)"
-
-[[params.menu.main]]
-url = '/locations/iron-horse/'
-title = "The Iron Horse (St. Jacob)"
-
-[[params.menu.main]]
-url = '/locations/mine/'
-title = "The Mine (Maryville)"
-
-[[params.menu.main]]
-url = '/locations/nomad/'
-title = "Nomad (Glen Carbon & O'Fallon)"
-
-[[params.menu.main]]
-url = '/locations/prost/'
-title = "Prost (Germantown)"
-
-[[params.menu.main]]
 url = '/locations/outer-rim/'
 title = "The Outer Rim (Fairview Heights)"
-
-[[params.menu.main]]
-url = '/locations/oval-office/'
-title = "The Oval Office (Herrin)"
-
-[[params.menu.main]]
-url = '/locations/pitch/'
-title = "The Pitch (Breese)"
-
-[[params.menu.main]]
-url = '/locations/rocky/'
-title = "Rocky (Carbondale)"
+sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/station/'
 title = "The Station (O'Fallon)"
+sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/stomping-grounds/'
 title = "The Stomping Grounds (Belleville)"
+sector = 'black'
 
 [[params.menu.main]]
-url = '/locations/store/'
-title = "The Store (Edwardsville)"
+url = '/locations/oval-office/'
+title = "The Oval Office (Herrin)"
+sector = 'maroon'
+
+[[params.menu.main]]
+url = '/locations/rocky/'
+title = "Rocky (Carbondale)"
+sector = 'maroon'
 
 [[params.menu.main]]
 url = '/locations/tower/'
 title = "The Tower (Energy)"
+sector = 'maroon'
+
+[[params.menu.main]]
+url = '/locations/iron-horse/'
+title = "The Iron Horse (St. Jacob)"
+sector = 'orange'
+
+[[params.menu.main]]
+url = '/locations/mine/'
+title = "The Mine (Maryville)"
+sector = 'orange'
+
+[[params.menu.main]]
+url = '/locations/nomad/'
+title = "Nomad (Glen Carbon & O'Fallon)"
+sector = 'orange'
+
+[[params.menu.main]]
+url = '/locations/store/'
+title = "The Store (Edwardsville)"
+sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/zoo/'
 title = "The Zoo (Troy)"
+sector = 'orange'
+
+[[params.menu.main]]
+url = '/locations/pitch/'
+title = "The Pitch (Breese)"
+sector = 'purple'
+
+[[params.menu.main]]
+url = '/locations/prost/'
+title = "Prost (Germantown)"
+sector = 'purple'
 
 #[[params.menu.main]]
 #url = '/locations/salem/'
