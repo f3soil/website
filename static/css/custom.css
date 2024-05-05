@@ -81,23 +81,22 @@ em.fineprint {
   -ms-transform: translateX(30em);
   transform: translateX(30em);
   width: 30em;
-  background: #a6a6a6;
 }
 
-#menu li.black {
-  color: #1d2a58 !important;
+#menu li.black a {
+  text-shadow: 2px 2px 3px #1d2a58;
 }
 
-#menu li.maroon {
-  color: #5f0f2d !important;
+#menu li.maroon a {
+  text-shadow: 2px 2px 3px #5f0f2d;
 }
 
-#menu li.orange {
-  color: #dc6c3d !important;
+#menu li.orange a {
+  text-shadow: 2px 2px 3px #dc6d3d;
 }
 
-#menu li.purple {
-  color: #25256a !important;
+#menu li.purple a {
+  text-shadow: 2px 2px 3px #25256a;
 }
 
 #main > header {
