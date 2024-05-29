@@ -37,4 +37,6 @@ ao:
       start: 06:00
       duration: 60m
 ---
+**Note: The Mine and The Station alternate a monthly convergence on the second Saturday of each month with even months being at The Mine and odd months being at The Station. This means The Mine will be closed on the second Saturday of odd months.**
+
 The Mine is located at Drost Park in Maryville, IL which features a seven-acre lake, several pavilions, about three miles of asphalt walking trails, picnic tables, benches, playgrounds; everything a Q needs to run a perfect boot camp workout.
