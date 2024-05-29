@@ -78,9 +78,10 @@ url = '/locations/prost/'
 title = "Prost (Germantown)"
 sector = 'purple'
 
-#[[params.menu.main]]
-#url = '/locations/salem/'
-#title = "Black Ops: Salem (Beta)"
+[[params.menu.main]]
+url = '/locations/salem/'
+title = "Black Ops: Salem (Beta)"
+sector = 'purple'
 
 [params.one]
 enable = true
