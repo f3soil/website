@@ -55,7 +55,7 @@ sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/nomad/'
-title = "Nomad (Glen Carbon & O'Fallon)"
+title = "Nomad (O'Fallon)"
 sector = 'orange'
 
 [[params.menu.main]]
