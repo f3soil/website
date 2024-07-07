@@ -29,21 +29,6 @@ title = "The Stomping Grounds (Belleville)"
 sector = 'black'
 
 [[params.menu.main]]
-url = '/locations/oval-office/'
-title = "The Oval Office (Herrin)"
-sector = 'maroon'
-
-[[params.menu.main]]
-url = '/locations/rocky/'
-title = "Rocky (Carbondale)"
-sector = 'maroon'
-
-[[params.menu.main]]
-url = '/locations/tower/'
-title = "The Tower (Energy)"
-sector = 'maroon'
-
-[[params.menu.main]]
 url = '/locations/iron-horse/'
 title = "The Iron Horse (St. Jacob)"
 sector = 'orange'
