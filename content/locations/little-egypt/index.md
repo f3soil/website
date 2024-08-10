@@ -1,11 +1,11 @@
 ---
-title: 'Black Ops: Salem'
+title: Little Egypt
 date: 2024-01-10T19:15:00-06:00
 ao:
-  name: 'Black Ops: Salem'
+  name: Little Egypt
   location_name: Bryan Memorial Park
   city: Salem
-  launched: June 5, 2024
+  launched: August 10, 2024
   q: Plankton
   place: https://maps.app.goo.gl/ukpP3ba8hbUHr66n6
   parking:
@@ -25,5 +25,5 @@ ao:
       start: 06:00
       duration: 60m
 ---
-Salem is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
-Come join us and help build something to serve your community!
+Salem is the gateway to Little Egypt so this AO has adopted that as its name.
+Come get a great workout among the rolling hills and waterfront trails of Bryan Memorial Park!

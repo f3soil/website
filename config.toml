@@ -54,6 +54,11 @@ title = "The Zoo (Troy)"
 sector = 'orange'
 
 [[params.menu.main]]
+url = '/locations/little-egypt/'
+title = "Little Egypt (Salem)"
+sector = 'purple'
+
+[[params.menu.main]]
 url = '/locations/pitch/'
 title = "The Pitch (Breese)"
 sector = 'purple'
@@ -61,11 +66,6 @@ sector = 'purple'
 [[params.menu.main]]
 url = '/locations/prost/'
 title = "Prost (Germantown)"
-sector = 'purple'
-
-[[params.menu.main]]
-url = '/locations/salem/'
-title = "Black Ops: Salem (Beta)"
 sector = 'purple'
 
 [params.one]
