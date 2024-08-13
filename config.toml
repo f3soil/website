@@ -54,6 +54,11 @@ title = "The Zoo (Troy)"
 sector = 'orange'
 
 [[params.menu.main]]
+url = '/locations/collinsville/'
+title = "Black Ops: Woodland Park (Collinsville)"
+sector = 'orange'
+
+[[params.menu.main]]
 url = '/locations/little-egypt/'
 title = "Little Egypt (Salem)"
 sector = 'purple'
