@@ -7,8 +7,10 @@ ao:
   location_name: Tri-Township Park
   city: Troy
   launched: November 9, 2022
-  q: Blue Steel
+  q: The Thumb
   qs:
+    - q: Blue Steel
+      term: May 10, 2023 - October 16, 2024
     - q: PonyKeg
       term: November 9, 2022 - May 10, 2023
   place: https://goo.gl/maps/ybBNVZHw2osLwo3Z7
