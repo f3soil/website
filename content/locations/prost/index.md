@@ -7,7 +7,10 @@ ao:
   location_name: Schoendienst Park
   city: Germantown
   launched: June 10, 2023
-  q: Julie the Cat
+  q: NIPS
+  qs:
+    - q: Julie the Cat
+      term: June 10, 2023 - October 24, 2024
   place: https://goo.gl/maps/8ER3KwBA7A3Aeifb6
   parking:
     lat: 38.5504438
