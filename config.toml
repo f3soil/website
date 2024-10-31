@@ -73,6 +73,11 @@ url = '/locations/prost/'
 title = "Prost (Germantown)"
 sector = 'purple'
 
+[[params.menu.main]]
+url = '/locations/new-baden/'
+title = "Black Ops: City Park (New Baden)"
+sector = 'purple'
+
 [params.one]
 enable = true
 title = 'What is F3? What is F3 SOIL?'
