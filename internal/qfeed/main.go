@@ -1,26 +1,34 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
+	"net/http"
 	"os"
 	"strings"
 	"time"
 
+	"github.com/andybalholm/cascadia"
 	"github.com/gorilla/feeds"
 	"github.com/samber/lo"
+	"golang.org/x/net/html"
 )
 
 func main() {
-	feed := GenerateFeed()
+	feed, err := GenerateFeed()
+	if err != nil {
+		_, _ = fmt.Fprintf(os.Stderr, "ERROR: generate feed: %s\n", err.Error())
+		os.Exit(1)
+	}
 	rss, err := feed.ToAtom()
 	if err != nil {
-		_, _ = fmt.Fprintf(os.Stderr, "ERROR: %s", err.Error())
+		_, _ = fmt.Fprintf(os.Stderr, "ERROR: atom: %s\n", err.Error())
 		os.Exit(1)
 	}
 	fmt.Println(rss)
 }
 
-func GenerateFeed() feeds.Feed {
+func GenerateFeed() (feeds.Feed, error) {
 	now := time.Now()
 	chicago, err := time.LoadLocation("America/Chicago")
 	if err != nil {
@@ -66,6 +74,9 @@ func GenerateFeed() feeds.Feed {
 	elapsed := time.Since(startDate)
 	qPointsIndex := (int(elapsed/publishInterval) + 1) % len(qPoints)
 	for i, q := range qPoints[0:qPointsIndex] {
+		if err := q.Get(); err != nil {
+			return feeds.Feed{}, err
+		}
 		qPointPubDate := startDate.Add(time.Duration(i) * publishInterval)
 		item := feeds.Item{
 			Id:      q.Link,
@@ -80,468 +91,202 @@ func GenerateFeed() feeds.Feed {
 			lines := lo.Map(q.Socratics, func(item string, index int) string {
 				return "<li>" + item + "</li>"
 			})
-			item.Content += "<ul>\n" + strings.Join(lines, "\n") + "\n</ul>"
+			item.Content += "\n<h1>Socratics</h1><ul>\n" + strings.Join(lines, "\n") + "\n</ul>\n"
+		}
+		if len(q.Spurs) > 0 {
+			lines := lo.Map(q.Spurs, func(item string, index int) string {
+				return "<li>" + item + "</li>"
+			})
+			item.Content += "\n<h1>Spurs</h1><ul>\n" + strings.Join(lines, "\n") + "\n</ul>\n"
+		}
+		if len(q.Body) > 0 {
+			item.Content += q.Body
 		}
 		feed.Items = append(feed.Items, &item)
 	}
-	return feed
+	return feed, nil
+}
+
+func query(n *html.Node, query string) *html.Node {
+	sel, err := cascadia.Parse(query)
+	if err != nil {
+		panic(err)
+	}
+	return cascadia.Query(n, sel)
+}
+
+func queryAll(n *html.Node, query string) []*html.Node {
+	sel, err := cascadia.Parse(query)
+	if err != nil {
+		panic(err)
+	}
+	return cascadia.QueryAll(n, sel)
+}
+
+func hasClass(listNode *html.Node, class string) bool {
+	for _, attr := range listNode.Attr {
+		if attr.Key != "class" {
+			continue
+		}
+		classes := strings.Fields(attr.Val)
+		if lo.Contains(classes, class) {
+			return true
+		}
+	}
+	return false
 }
 
 type QPoint struct {
 	Title     string
 	Link      string
 	Socratics []string
+
+	Body  string
+	Spurs []string
+}
+
+func (q *QPoint) Get() error {
+	resp, err := http.Get(q.Link)
+	if err != nil {
+		return err
+	}
+	if resp.StatusCode != 200 {
+		return fmt.Errorf("returned %d status code: %s", resp.StatusCode, resp.Request.URL.String())
+	}
+	defer func() {
+		_ = resp.Body.Close()
+	}()
+
+	doc, err := html.Parse(resp.Body)
+	if err != nil {
+		return err
+	}
+
+	if err := q.GetBody(doc); err != nil {
+		return fmt.Errorf("%w: %s", err, q.Link)
+	}
+	q.Socratics, err = q.GetPoints(doc, "Socratic")
+	if err != nil {
+		return fmt.Errorf("%w: %s", err, q.Link)
+	}
+	q.Spurs, err = q.GetPoints(doc, "Spur")
+	if err != nil {
+		return fmt.Errorf("%w: %s", err, q.Link)
+	}
+
+	return nil
+}
+
+func (q *QPoint) GetBody(doc *html.Node) error {
+	node := query(doc, "div.c-sub-heading h1")
+	if node == nil {
+		return fmt.Errorf("could not find body")
+	}
+	node = node.Parent.Parent.Parent.Parent
+	if node == nil {
+		return fmt.Errorf("could not find body")
+	}
+
+	var b bytes.Buffer
+	if err := html.Render(&b, node); err != nil {
+		return err
+	}
+
+	q.Body = b.String()
+	return nil
+}
+
+func (q *QPoint) GetPoints(doc *html.Node, name string) ([]string, error) {
+	nodes := queryAll(doc, "div.c-sub-heading > div > div > h4 > strong")
+	listNode := new(html.Node)
+	for _, node := range nodes {
+		if node.FirstChild == nil {
+			continue
+		}
+		if !strings.Contains(node.FirstChild.Data, name) {
+			// Hack because of broken page for Q4.5 Failure
+			if !(name == "Socratic" && strings.Contains(node.FirstChild.Data, "SocBullet listratic")) {
+				continue
+			}
+		}
+		listNode = node.Parent.Parent.Parent.Parent.NextSibling
+		if listNode == nil {
+			continue
+		}
+		for {
+			if listNode == nil {
+				return nil, fmt.Errorf("could not find a %s node", name)
+			}
+			if hasClass(listNode, "c-bullet-list") {
+				break
+			}
+			listNode = listNode.NextSibling
+		}
+		break
+	}
+	if listNode == nil {
+		return nil, fmt.Errorf("could not find a %s node", name)
+	}
+	if len(listNode.Data) == 0 {
+		return nil, fmt.Errorf("could not find a %s node", name)
+	}
+	itemNodes := queryAll(listNode, "li > p")
+	points := make([]string, len(itemNodes))
+	for _, itemNode := range itemNodes {
+		points = append(points, itemNode.Data)
+	}
+	return points, nil
 }
 
 var qPoints = []QPoint{
-	{
-		Title: "Disruption (F1)",
-		Link:  "https://f3nation.com/disruption",
-		Socratics: []string{
-			"What do leaders do?",
-			"What effect does leadership have on the status quo?",
-			"Is there a common characteristic shared by leaders who leave a legacy?",
-		},
-	},
-	{
-		Title: "Language (F2)",
-		Link:  "https://f3nation.com/language",
-		Socratics: []string{
-			"How has the theory of leadership changed over time?",
-			"Does the culture have any effect upon the language of leadership?",
-			"Is there one common language of leadership?",
-		},
-	},
-	{
-		Title: "Group (F3)",
-		Link:  "https://f3nation.com/group",
-		Socratics: []string{
-			"Is man’s natural desire solitude or combination?",
-			"Are there different types of groups that people form?",
-			"Are there any types of groups that are more important than others?",
-		},
-	},
-	{
-		Title: "LDP (F4)",
-		Link:  "https://f3nation.com/ldp",
-		Socratics: []string{
-			"Is a Leader born or made?",
-			"Are there common elements to leadership development?",
-			"Should the leadership development process be controlled from the top of an Organization?",
-		},
-	},
-	{
-		Title: "Preparedness (F5)",
-		Link:  "https://f3nation.com/preparedness",
-		Socratics: []string{
-			"Does a man’s need to be prepared change over time?",
-			"Is preparedness a mind set or a process?",
-			"What drives a man’s desire to be prepared?",
-		},
-	},
-	{
-		Title: "Get Right (Q1)",
-		Link:  "https://f3nation.com/get-right",
-		Socratics: []string{
-			"In a man’s pursuit of change in his life, is there anything that must occur first?",
-			"Who does the unfit man serve?",
-			"Does service to others require a man to abandon service to himself?",
-		},
-	},
-	{
-		Title: "DRP (Q1.1)",
-		Link:  "https://f3nation.com/drp",
-		Socratics: []string{
-			"Can a man Get Right by himself?",
-			"Do New Year’s Resolutions work?",
-			"Are choices good?",
-		},
-	},
-	{
-		Title: "King (Q1.2)",
-		Link:  "https://f3nation.com/king",
-		Socratics: []string{
-			"What is the most important component of Fitness?",
-			"What is the purpose of exercise?",
-			"What is the best way to Accelerate Fitness?",
-		},
-	},
-	{
-		Title: "Queen (Q1.3)",
-		Link:  "https://f3nation.com/queen",
-		Socratics: []string{
-			"Can a good exercise routine overcome a bad diet?",
-			"Are some foods bad?",
-			"What leads a man to descend into gluttony?",
-		},
-	},
-	{
-		Title: "Jester (Q1.4)",
-		Link:  "https://f3nation.com/jester",
-		Socratics: []string{
-			"Are some temptations worse than others?",
-			"Don’t bad men often do good things, and good men often do bad things?",
-			"Can a man ultimately conquer his own demons?",
-		},
-	},
-	{
-		Title: "M (Q1.5)",
-		Link:  "https://f3nation.com/m",
-		Socratics: []string{
-			"Is work-life balance a useful concept?",
-			"Are some relationships more important than others?",
-			"Is meeting your wife halfway good enough?",
-		},
-	},
-	{
-		Title: "Shorties (Q1.6)",
-		Link:  "https://f3nation.com/shorties",
-		Socratics: []string{
-			"What can a father hold back from his children?",
-			"How important is a father?",
-			"Why must a father be strong for his children?",
-		},
-	},
-	{
-		Title: "Shield Lock (Q1.7)",
-		Link:  "https://f3nation.com/shield-lock",
-		Socratics: []string{
-			"Are some men born to be lone wolves?",
-			"Do Communities benefit when men combine?",
-			"Can a man begin the fight against adversity before he encounters it?",
-		},
-	},
-	{
-		Title: "Whetstone (Q1.8)",
-		Link:  "https://f3nation.com/whetstone",
-		Socratics: []string{
-			"What is the purpose of mentorship?",
-			"Are there any required components to Effective mentorship?",
-			"How does a mentor benefit?",
-		},
-	},
-	{
-		Title: "Mammon (Q1.9)",
-		Link:  "https://f3nation.com/mammon",
-		Socratics: []string{
-			"Is there anything inherently good about work?",
-			"Is work anything more than something we do?",
-			"What priority should a man give to his work?",
-		},
-	},
-	{
-		Title: "Prayer (Q1.10)",
-		Link:  "https://f3nation.com/prayer",
-		Socratics: []string{
-			"Does Faith play a role in Leadership?",
-			"How did we get here?",
-			"Are fear and worry bad things?",
-		},
-	},
-	{
-		Title: "Study (Q1.11)",
-		Link:  "https://f3nation.com/study",
-		Socratics: []string{
-			"Is there a connection between Leadership and Faith?",
-			"How does a man know his belief system is based upon truth?",
-			"Is Faith static or dynamic?",
-		},
-	},
-	{
-		Title: "Meeting (Q1.12)",
-		Link:  "https://f3nation.com/meeting",
-		Socratics: []string{
-			"Is there something to be gained through corporate worship?",
-			"Is there any relationship between Leadership and attendance at church?",
-			"Are pastors affected by who is sitting in their pews?",
-		},
-	},
-	{
-		Title: "Live Right (Q2)",
-		Link:  "https://f3nation.com/live-right",
-		Socratics: []string{
-			"Are we alive for a reason outside of our own existence?",
-			"What happens to a man who lives primarily for himself?",
-			"Is there an intrinsic benefit in living for others?",
-		},
-	},
-	{
-		Title: "Impact (Q2.1)",
-		Link:  "https://f3nation.com/impact",
-		Socratics: []string{
-			"Can a man self-initiate positive change in his life?",
-			"Can a broken man be helped?",
-			"Can an unbroken man be convinced to risk abandoning his Status Quo?",
-		},
-	},
-	{
-		Title: "Influence (Q2.2)",
-		Link:  "https://f3nation.com/influence",
-		Socratics: []string{
-			"Can you force a man to help himself?",
-			"How can one man help another man change his life?",
-			"What does Influence look like?",
-		},
-	},
-	{
-		Title: "Missionality (Q2.3)",
-		Link:  "https://f3nation.com/missionality",
-		Socratics: []string{
-			"Should a man keep trying new things in order to be Happy?",
-			"How does a man know where his IMPACT will be greatest?",
-			"What happens if a man does not stay Missional?",
-		},
-	},
-	{
-		Title: "Positive Habit Transfer (Q2.4)",
-		Link:  "https://f3nation.com/positive-habit-transfer",
-		Socratics: []string{
-			"Can you learn to do things right from a man who does things wrong?",
-			"What is the purpose of building positive Habits?",
-			"What is the purpose in passing positive Habits on to others?",
-		},
-	},
-	{
-		Title: "Accountability (Q2.5)",
-		Link:  "https://f3nation.com/accountability",
-		Socratics: []string{
-			"Can a man hold himself Accountable?",
-			"Are there necessary components to Effective Accountability?",
-			"Is there an ideal relationship for mutual Accountability between men?",
-		},
-	},
-	{
-		Title: "Correction (Q2.6)",
-		Link:  "https://f3nation.com/correction",
-		Socratics: []string{
-			"Can Virtue be instilled by example alone?",
-			"Why would a man decline to tell another man the truth about his shortcomings?",
-			"Can a man be a bully even if he is right?",
-		},
-	},
-	{
-		Title: "Targeting (Q2.7)",
-		Link:  "https://f3nation.com/targeting",
-		Socratics: []string{
-			"Can a man Live Right without being pointed in any particular direction?",
-			"Is there a peace that surpasses all human understanding?",
-			"Is there any particular tempo required to Live Right?",
-		},
-	},
-	{
-		Title: "The Practice Of Virtuous Leadership",
-		Link:  "https://f3nation.com/lead-right",
-		Socratics: []string{
-			"What enables a man to do what a Leader does?",
-			"What makes a man what a Leader is?",
-			"What is the difference between a good and bad Leader?",
-		},
-	},
-	{
-		Title: "Shared Leadership (Q3.1)",
-		Link:  "https://f3nation.com/shared-leadership",
-		Socratics: []string{
-			"Why do men pool their efforts?",
-			"Can anyone Lead together?",
-			"Does a Leader gain anything by sharing power?",
-		},
-	},
-	{
-		Title: "Mutual Competence (Q3.2)",
-		Link:  "https://f3nation.com/mutual-competence",
-		Socratics: []string{
-			"Is Competence important to Group Success?",
-			"Does every Member of a Team have to be equally Competent?",
-			"How Competent must the Leader be?",
-		},
-	},
-	{
-		Title: "Trust (Q3.3)",
-		Link:  "https://f3nation.com/trust",
-		Socratics: []string{
-			"Is the reward of Shared Leadership worth the risk?",
-			"Can a man’s resolve be determined before he is called upon to put it in action?",
-			"What is the purpose of a CSAUP?",
-		},
-	},
-	{
-		Title: "Vision (Q3.4)",
-		Link:  "https://f3nation.com/vision",
-		Socratics: []string{
-			"How does a Group determine what to do next?",
-			"Does an idea have to be big to be good?",
-			"Who has Vision?",
-		},
-	},
-	{
-		Title: "Articulation (Q3.5)",
-		Link:  "https://f3nation.com/articulation",
-		Socratics: []string{
-			"Is Articulation a Skill that all people possess?",
-			"Are great Articulators born or made?",
-			"What is the primary goal of Articulation?",
-		},
-	},
-	{
-		Title: "Persuasion (Q3.6)",
-		Link:  "https://f3nation.com/persuasion",
-		Socratics: []string{
-			"Can you lie and and bully a man into doing what’s good for him?",
-			"What is the biggest Obstacle to Movement?",
-			"Must a man agree before he Moves?",
-		},
-	},
-	{
-		Title: "Exhortation (Q3.7)",
-		Link:  "https://f3nation.com/exhortation",
-		Socratics: []string{
-			"Is there a difference between Exhortation and encouragement?",
-			"What exactly are we afraid of?",
-			"Can a man Exhort the breach of something he himself has never experienced?",
-		},
-	},
-	{
-		Title: "Candor (Q3.8)",
-		Link:  "https://f3nation.com/candor",
-		Socratics: []string{
-			"Are all Truths self-evident?",
-			"Are some things better left unsaid?",
-			"What happens if you kill the messenger?",
-		},
-	},
-	{
-		Title: "Commitment (Q3.9)",
-		Link:  "https://f3nation.com/commitment",
-		Socratics: []string{
-			"Is there anything a Leader must surrender in order to be Committed?",
-			"Is there anything a Leader must do to demonstrate Commitment?",
-			"What is more important, loyalty or determination?",
-		},
-	},
-	{
-		Title: "Consistency (Q3.10)",
-		Link:  "https://f3nation.com/consistency",
-		Socratics: []string{
-			"Why do complex men often lead simple lives?",
-			"How can a man keep from going off the rails?",
-			"How can a man learn to be Consistent?",
-		},
-	},
-	{
-		Title: "Contentment (Q3.11)",
-		Link:  "https://f3nation.com/contentment",
-		Socratics: []string{
-			"What is the difference between Happiness and Joy?",
-			"How does a man learn to govern his emotions?",
-			"Does control over one’s environment foster Contentment?",
-		},
-	},
-	{
-		Title: "Courage (Q3.12)",
-		Link:  "https://f3nation.com/courage",
-		Socratics: []string{
-			"Does Courage require the absence of Fear?",
-			"Can an un-Fit man be brave?",
-			"What is Grace?",
-		},
-	},
-	{
-		Title: "Leave Right (Q4)",
-		Link:  "https://f3nation.com/leave-right",
-		Socratics: []string{
-			"How does Legacy come about?",
-			"Is a man’s Legacy preordained?",
-			"What role does Leadership development play in Legacy?",
-		},
-	},
-	{
-		Title: "Sua Sponte Leader (Q4.1)",
-		Link:  "https://f3nation.com/sua-sponte-leader",
-		Socratics: []string{
-			"How does a Leader know what to do?",
-			"How does a Leader know how to do?",
-			"How does a Group ensure that its Leaders know what and how to do?",
-		},
-	},
-	{
-		Title: "Schooling (Q4.2)",
-		Link:  "https://f3nation.com/schooling",
-		Socratics: []string{
-			"Should a the theory of Leadership change over time and place?",
-			"Can a natural born Leader be Effective without formal training?",
-			"When does a Leader know that he has learned enough?",
-		},
-	},
-	{
-		Title: "Apprenticeship (Q4.3)",
-		Link:  "https://f3nation.com/apprenticeship",
-		Socratics: []string{
-			"Is there a pattern of learning that best serves the apprentice?",
-			"How does a Leader turn head-knowledge into heart-knowledge?",
-			"What Incentive does a Leader have to train his subordinates?",
-		},
-	},
-	{
-		Title: "Opportunity (Q4.4)",
-		Link:  "https://f3nation.com/opportunity",
-		Socratics: []string{
-			"How do most Groups choose their Leaders?",
-			"What criteria should a Group use to evaluate its Leaders?",
-			"What is the ideal time to start Leading?",
-		},
-	},
-	{
-		Title: "Failure (Q4.5)",
-		Link:  "https://f3nation.com/failure",
-		Socratics: []string{
-			"Is Failure necessary to Leadership development?",
-			"Does Failure also require Pain?",
-			"What should a Group do with a Leader after he has Failed?",
-		},
-	},
-	{
-		Title: "Team Development (Q4.6)",
-		Link:  "https://f3nation.com/team-development",
-		Socratics: []string{
-			"What role does the Team play in Advantage-seeking?",
-			"What role does the Q play in Team Development?",
-			"How does the Q extend his authority?",
-		},
-	},
-	{
-		Title: "Equipping (Q4.7)",
-		Link:  "https://f3nation.com/equipping",
-		Socratics: []string{
-			"Is it human nature to combine together to accomplish things?",
-			"How does the Q match Members to Mission within the Team?",
-			"Do men know their role by nature?",
-		},
-	},
-	{
-		Title: "Accountability.Team (Q4.8)",
-		Link:  "https://f3nation.com/accountability-team",
-		Socratics: []string{
-			"Do Teams need Standards in the way that a man does?",
-			"How important is it for the Q to enforce Standards within the Team?",
-			"What does the Q do about a man who doesn’t meet the Team’s Standards?",
-		},
-	},
-	{
-		Title: "Missionality.Team (Q4.9)",
-		Link:  "https://f3nation.com/missionality-team",
-		Socratics: []string{
-			"Can a Team Prosper without a Mission?",
-			"How does the Q keep his Team focused on the Mission?",
-			"What danger is there for a Team that loses focus?",
-		},
-	},
-	{
-		Title: "Lizard Building (Q4.10)",
-		Link:  "https://f3nation.com/lizard-building",
-		Socratics: []string{
-			"What is the glue that holds an Effective Organization together?",
-			"What does the Organizational chart of an Effective Organization look like?",
-			"How does a Leader maintain control over an Effective Organization?",
-		},
-	},
+	{Title: "Disruption (F1)", Link: "https://f3nation.com/disruption"},
+	{Title: "Language (F2)", Link: "https://f3nation.com/language"},
+	{Title: "Group (F3)", Link: "https://f3nation.com/group"},
+	{Title: "LDP (F4)", Link: "https://f3nation.com/ldp"},
+	{Title: "Preparedness (F5)", Link: "https://f3nation.com/preparedness"},
+	{Title: "Get Right (Q1)", Link: "https://f3nation.com/get-right"},
+	{Title: "DRP (Q1.1)", Link: "https://f3nation.com/drp"},
+	{Title: "King (Q1.2)", Link: "https://f3nation.com/king"},
+	{Title: "Queen (Q1.3)", Link: "https://f3nation.com/queen"},
+	{Title: "Jester (Q1.4)", Link: "https://f3nation.com/jester"},
+	{Title: "M (Q1.5)", Link: "https://f3nation.com/m"},
+	{Title: "Shorties (Q1.6)", Link: "https://f3nation.com/shorties"},
+	{Title: "Shield Lock (Q1.7)", Link: "https://f3nation.com/shield-lock"},
+	{Title: "Whetstone (Q1.8)", Link: "https://f3nation.com/whetstone"},
+	{Title: "Mammon (Q1.9)", Link: "https://f3nation.com/mammon"},
+	{Title: "Prayer (Q1.10)", Link: "https://f3nation.com/prayer"},
+	{Title: "Study (Q1.11)", Link: "https://f3nation.com/study"},
+	{Title: "Meeting (Q1.12)", Link: "https://f3nation.com/meeting"},
+	{Title: "Live Right (Q2)", Link: "https://f3nation.com/live-right"},
+	{Title: "Impact (Q2.1)", Link: "https://f3nation.com/impact"},
+	{Title: "Influence (Q2.2)", Link: "https://f3nation.com/influence"},
+	{Title: "Missionality (Q2.3)", Link: "https://f3nation.com/missionality"},
+	{Title: "Positive Habit Transfer (Q2.4)", Link: "https://f3nation.com/pht"},
+	{Title: "Accountability (Q2.5)", Link: "https://f3nation.com/accountability"},
+	{Title: "Correction (Q2.6)", Link: "https://f3nation.com/correction"},
+	{Title: "Targeting (Q2.7)", Link: "https://f3nation.com/targeting"},
+	{Title: "The Practice Of Virtuous Leadership", Link: "https://f3nation.com/lead-right-q3"},
+	{Title: "Shared Leadership (Q3.1)", Link: "https://f3nation.com/shared-leadership"},
+	{Title: "Mutual Competence (Q3.2)", Link: "https://f3nation.com/mutual-competence"},
+	{Title: "Trust (Q3.3)", Link: "https://f3nation.com/trust"},
+	{Title: "Vision (Q3.4)", Link: "https://f3nation.com/vision"},
+	{Title: "Articulation (Q3.5)", Link: "https://f3nation.com/articulation"},
+	{Title: "Persuasion (Q3.6)", Link: "https://f3nation.com/persuasion"},
+	{Title: "Exhortation (Q3.7)", Link: "https://f3nation.com/exhortation"},
+	{Title: "Candor (Q3.8)", Link: "https://f3nation.com/candor"},
+	{Title: "Commitment (Q3.9)", Link: "https://f3nation.com/commitment"},
+	{Title: "Consistency (Q3.10)", Link: "https://f3nation.com/consistency"},
+	{Title: "Contentment (Q3.11)", Link: "https://f3nation.com/contentment"},
+	{Title: "Courage (Q3.12)", Link: "https://f3nation.com/courage"},
+	{Title: "Leave Right (Q4)", Link: "https://f3nation.com/leave-right"},
+	{Title: "Sua Sponte Leader (Q4.1)", Link: "https://f3nation.com/sua"},
+	{Title: "Schooling (Q4.2)", Link: "https://f3nation.com/schooling"},
+	{Title: "Apprenticeship (Q4.3)", Link: "https://f3nation.com/apprenticeship"},
+	{Title: "Opportunity (Q4.4)", Link: "https://f3nation.com/opp"},
+	{Title: "Failure (Q4.5)", Link: "https://f3nation.com/failure"},
+	{Title: "Team Development (Q4.6)", Link: "https://f3nation.com/team-development"},
+	{Title: "Equipping (Q4.7)", Link: "https://f3nation.com/equipping"},
+	{Title: "Accountability.Team (Q4.8)", Link: "https://f3nation.com/accountability-team"},
+	{Title: "Missionality.Team (Q4.9)", Link: "https://f3nation.com/missionality-team"},
+	{Title: "Lizard Building (Q4.10)", Link: "https://f3nation.com/lizard-building"},
 }
