@@ -137,12 +137,12 @@ func hasClass(listNode *html.Node, class string) bool {
 }
 
 type QPoint struct {
-	Title     string
-	Link      string
-	Socratics []string
+	Title string
+	Link  string
 
-	Body  string
-	Spurs []string
+	Socratics []string
+	Spurs     []string
+	Body      string
 }
 
 func (q *QPoint) Get() error {
@@ -231,9 +231,9 @@ func (q *QPoint) GetPoints(doc *html.Node, name string) ([]string, error) {
 		return nil, fmt.Errorf("could not find a %s node", name)
 	}
 	itemNodes := queryAll(listNode, "li > p")
-	points := make([]string, len(itemNodes))
+	points := make([]string, 0)
 	for _, itemNode := range itemNodes {
-		points = append(points, itemNode.Data)
+		points = append(points, itemNode.FirstChild.Data)
 	}
 	return points, nil
 }
