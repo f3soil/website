@@ -73,7 +73,7 @@ func GenerateFeed() (feeds.Feed, error) {
 
 	elapsed := time.Since(startDate)
 	qPointsIndex := (int(elapsed/publishInterval) + 1) % len(qPoints)
-	for i, q := range qPoints[0:qPointsIndex] {
+	for i, q := range qPoints[qPointsIndex-1 : qPointsIndex] {
 		if err := q.Get(); err != nil {
 			return feeds.Feed{}, err
 		}
