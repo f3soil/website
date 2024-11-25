@@ -285,7 +285,7 @@ var qPoints = []QPoint{
 	{Title: "Opportunity (Q4.4)", Link: "https://f3nation.com/opp"},
 	{Title: "Failure (Q4.5)", Link: "https://f3nation.com/failure"},
 	{Title: "Team Development (Q4.6)", Link: "https://f3nation.com/team-development"},
-	{Title: "Equipping (Q4.7)", Link: "https://f3nation.com/equipping"},
+	{Title: "Equipping (Q4.7)", Link: "https://f3nation.com/equip"},
 	{Title: "Accountability.Team (Q4.8)", Link: "https://f3nation.com/accountability-team"},
 	{Title: "Missionality.Team (Q4.9)", Link: "https://f3nation.com/missionality-team"},
 	{Title: "Lizard Building (Q4.10)", Link: "https://f3nation.com/lizard-building"},
