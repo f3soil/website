@@ -2,6 +2,7 @@
 title: 'Black Ops: Collinsville'
 date: 2024-01-10T19:15:00-06:00
 ao:
+  sector: Orange
   name: 'Black Ops: Collinsville'
   location_name: Woodland Park
   city: Collinsville

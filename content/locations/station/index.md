@@ -3,6 +3,7 @@ title: The Station
 date: 2023-01-09T20:27:34-06:00
 image: ao_station.jpg
 ao:
+  sector: Black
   name: The Station
   location_name: O'Fallon Community Park
   city: O'Fallon

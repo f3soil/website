@@ -2,6 +2,7 @@
 title: 'Black Ops: New Baden'
 date: 2024-10-30T19:15:00-05:00
 ao:
+  sector: Purple
   name: 'Black Ops: New Baden'
   location_name: City Park
   city: New Baden

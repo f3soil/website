@@ -1,0 +1,48 @@
+{{ partial "header.html" . }}
+<article id="main">
+    <header {{ with .Params.image }}style="background-image: url('{{ . }}')"{{ end }}>
+        <h2>Locations</h2>
+        {{ with .Params.subtitle }}
+        <p>{{ . }}</p>
+        {{ end }}
+    </header>
+    <section class="wrapper style5">
+        <div class="inner">
+            <p class="ao-intro">{{ .Content }}</p>
+            <section id="site-info">
+                <div id="details" class="split">
+                    <table>
+                        <tr>
+                            <th>Sector</th>
+                            <th>Name</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                        {{ $pages := where site.RegularPages "Type" "locations" }}
+                        {{ $paginator := .Paginate $pages.ByTitle 100 }}
+                        {{ range sort .Paginator.Pages ".Params.ao.sector" }}
+                        <tr>
+                            <td>{{ .Params.ao.sector }}</td>
+                            <td><a href="{{ .Permalink }}">{{ .Params.ao.name }}</a></td>
+                            <td>{{ .Params.ao.schedule.monday.type }}<br />{{ .Params.ao.schedule.monday.start }}</td>
+                            <td>{{ .Params.ao.schedule.tuesday.type }}<br />{{ .Params.ao.schedule.tuesday.start }}</td>
+                            <td>{{ .Params.ao.schedule.wednesday.type }}<br />{{ .Params.ao.schedule.wednesday.start }}</td>
+                            <td>{{ .Params.ao.schedule.thursday.type }}<br />{{ .Params.ao.schedule.thursday.start }}</td>
+                            <td>{{ .Params.ao.schedule.friday.type }}<br />{{ .Params.ao.schedule.friday.start }}</td>
+                            <td>{{ .Params.ao.schedule.saturday.type }}<br />{{ .Params.ao.schedule.saturday.start }}</td>
+                            <td>{{ .Params.ao.schedule.sunday.type }}<br />{{ .Params.ao.schedule.sunday.start }}</td>
+                        </tr>
+                        {{ end }}
+                    </table>
+                </div>
+            </section>
+        </div>
+    </section>
+</article>
+{{ partial "contact.html" . }}
+{{ partial "footer.html" . }}

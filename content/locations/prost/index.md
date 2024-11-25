@@ -3,6 +3,7 @@ title: Prost
 date: 2023-01-09T20:27:34-06:00
 image: ao_prost.jpg
 ao:
+  sector: Purple
   name: Prost
   location_name: Schoendienst Park
   city: Germantown

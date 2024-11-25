@@ -2,6 +2,7 @@
 title: Little Egypt
 date: 2024-01-10T19:15:00-06:00
 ao:
+  sector: Purple
   name: Little Egypt
   location_name: Bryan Memorial Park
   city: Salem

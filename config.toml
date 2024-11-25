@@ -14,6 +14,11 @@ The circle F3 logo is used with the permission of <a href="https://f3nation.com/
 '''
 
 [[params.menu.main]]
+url = '/locations/'
+title = "Overview"
+sector = 'black'
+
+[[params.menu.main]]
 url = '/locations/outer-rim/'
 title = "The Outer Rim (Fairview Heights)"
 sector = 'black'

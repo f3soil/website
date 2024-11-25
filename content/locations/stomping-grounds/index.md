@@ -3,6 +3,7 @@ title: The Stomping Grounds
 date: 2023-01-09T20:27:34-06:00
 image: ao_stomping_grounds.jpg
 ao:
+  sector: Black
   name: The Stomping Grounds
   location_name: Bicentennial Park
   city: Belleville
