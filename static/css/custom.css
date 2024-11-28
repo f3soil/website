@@ -96,9 +96,13 @@ em.fineprint {
 }
 
 #main > header {
-    background-attachment: initial; !important
+  background-attachment: initial; !important
 }
 
 #header nav > ul > li > a.menuToggle span {
   display: inline !important;
+}
+
+article.site-overview {
+  min-width: 1000px !important;
 }
