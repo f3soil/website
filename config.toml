@@ -79,6 +79,11 @@ title = "Prost (Germantown)"
 sector = 'purple'
 
 [[params.menu.main]]
+url = '/locations/hoyleton/'
+title = "Black Ops: Hoyleton Park (Hoyleton)"
+sector = 'purple'
+
+[[params.menu.main]]
 url = '/locations/new-baden/'
 title = "Black Ops: City Park (New Baden)"
 sector = 'purple'
