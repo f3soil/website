@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"github.com/andybalholm/cascadia"
+	"github.com/cenkalti/backoff/v4"
 	"github.com/gorilla/feeds"
 	"github.com/samber/lo"
 	"golang.org/x/net/html"
@@ -146,12 +147,19 @@ type QPoint struct {
 }
 
 func (q *QPoint) Get() error {
-	resp, err := http.Get(q.Link)
+	op := func() (*http.Response, error) {
+		resp, err := http.Get(q.Link)
+		if err != nil {
+			return nil, err
+		}
+		if resp.StatusCode != 200 {
+			return nil, fmt.Errorf("returned %d status code: %s", resp.StatusCode, resp.Request.URL.String())
+		}
+		return resp, nil
+	}
+	resp, err := backoff.RetryWithData(op, backoff.NewExponentialBackOff())
 	if err != nil {
 		return err
-	}
-	if resp.StatusCode != 200 {
-		return fmt.Errorf("returned %d status code: %s", resp.StatusCode, resp.Request.URL.String())
 	}
 	defer func() {
 		_ = resp.Body.Close()
