@@ -7,7 +7,7 @@ ao:
   location_name: City Park
   city: New Baden
   launched: October 30, 2024
-  q: Julie the Cat
+  q: Kaa
   place: https://maps.app.goo.gl/BHDEP1yHPwv1h9dP6
   parking:
     lat: 38.53309170509264
