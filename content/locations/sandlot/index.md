@@ -1,6 +1,7 @@
 ---
 title: 'The Sandlot'
 date: 2024-10-30T19:15:00-05:00
+image: Sandlot20250111_Launch_PAX.jpg
 ao:
   sector: Purple
   name: 'The Sandlot'
