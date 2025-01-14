@@ -79,13 +79,13 @@ title = "Prost (Germantown)"
 sector = 'purple'
 
 [[params.menu.main]]
-url = '/locations/hoyleton/'
-title = "Black Ops: Hoyleton Park (Hoyleton)"
+url = '/locations/sandlot/'
+title = "The Sandlot (New Baden)"
 sector = 'purple'
 
 [[params.menu.main]]
-url = '/locations/new-baden/'
-title = "Black Ops: City Park (New Baden)"
+url = '/locations/hoyleton/'
+title = "Black Ops: Hoyleton Park (Hoyleton)"
 sector = 'purple'
 
 [params.one]

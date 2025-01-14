@@ -1,12 +1,12 @@
 ---
-title: 'Black Ops: New Baden'
+title: 'The Sandlot'
 date: 2024-10-30T19:15:00-05:00
 ao:
   sector: Purple
-  name: 'Black Ops: New Baden'
+  name: 'The Sandlot'
   location_name: City Park
   city: New Baden
-  launched: October 30, 2024
+  launched: January 11, 2025
   q: Kaa
   place: https://maps.app.goo.gl/BHDEP1yHPwv1h9dP6
   parking:
