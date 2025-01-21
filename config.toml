@@ -49,6 +49,11 @@ title = "Nomad (O'Fallon)"
 sector = 'orange'
 
 [[params.menu.main]]
+url = '/locations/smokestack/'
+title = "The Smokestack (Collinsville)"
+sector = 'orange'
+
+[[params.menu.main]]
 url = '/locations/store/'
 title = "The Store (Edwardsville)"
 sector = 'orange'
@@ -56,11 +61,6 @@ sector = 'orange'
 [[params.menu.main]]
 url = '/locations/zoo/'
 title = "The Zoo (Troy)"
-sector = 'orange'
-
-[[params.menu.main]]
-url = '/locations/collinsville/'
-title = "Black Ops: Woodland Park (Collinsville)"
 sector = 'orange'
 
 [[params.menu.main]]

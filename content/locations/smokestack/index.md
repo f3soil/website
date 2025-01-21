@@ -1,12 +1,12 @@
 ---
-title: 'Black Ops: Collinsville'
+title: 'The Smokestack'
 date: 2024-01-10T19:15:00-06:00
 ao:
   sector: Orange
-  name: 'Black Ops: Collinsville'
+  name: 'The Smokestack'
   location_name: Woodland Park
   city: Collinsville
-  launched: August 20, 2024
+  launched: January 21, 2025
   q: Chief Choppa
   place: https://maps.app.goo.gl/N5B77PZHCPXrzeqR9
   parking:
@@ -22,5 +22,4 @@ ao:
       start: 05:30
       duration: 45m
 ---
-This is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
 Come join us and help build something to serve your community!
