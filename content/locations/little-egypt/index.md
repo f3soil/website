@@ -1,6 +1,7 @@
 ---
 title: Little Egypt
 date: 2024-01-10T19:15:00-06:00
+image: AO_LittleEgypt_Shelter1.jpg
 ao:
   sector: Purple
   name: Little Egypt
