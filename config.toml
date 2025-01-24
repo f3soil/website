@@ -19,6 +19,11 @@ title = "Overview"
 sector = 'black'
 
 [[params.menu.main]]
+url = '/locations/nomad/'
+title = "Nomad (O'Fallon)"
+sector = 'black'
+
+[[params.menu.main]]
 url = '/locations/outer-rim/'
 title = "The Outer Rim (Fairview Heights)"
 sector = 'black'
@@ -41,11 +46,6 @@ sector = 'orange'
 [[params.menu.main]]
 url = '/locations/mine/'
 title = "The Mine (Maryville)"
-sector = 'orange'
-
-[[params.menu.main]]
-url = '/locations/nomad/'
-title = "Nomad (O'Fallon)"
 sector = 'orange'
 
 [[params.menu.main]]
