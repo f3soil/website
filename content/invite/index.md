@@ -1,6 +1,6 @@
 ---
 title: Join F3 SOIL Slack
-date: 2024-10-18:15:0-06:00
+date: 2024-10-18T19:15:00-06:00
 type: single
 ---
 1. Install Slack from the [iOS App Store](https://apps.apple.com/us/app/slack/id618783545) or the [Google Play Store](https://play.google.com/store/apps/details?cat=-1&id=com.Slack&hl=en_NZ).

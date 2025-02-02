@@ -1,6 +1,6 @@
 ---
 title: What's all the hype about?
-date: 2023-12-24:15:33-06:00
+date: 2023-12-24T19:15:00-06:00
 type: hype
 ---
 <div style="padding: 56.25% 0 0 0; position: relative;">
