@@ -85,7 +85,7 @@ sector = 'purple'
 
 [[params.menu.main]]
 url = '/locations/sandlot/'
-title = "The Sandlot (New Baden)"
+title = "The Sandlot (Aviston)"
 sector = 'purple'
 
 [[params.menu.main]]
