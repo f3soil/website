@@ -12,7 +12,7 @@
             <section>
                 <div id="details" class="split">
                     {{- $root := . -}}
-                    {{- range $sector := collections.Slice "Black" "Orange" "Purple" -}}
+                    {{- range $sector := collections.Slice "Black" "Orange" -}}
                     <h3>{{ $sector }} Sector</h3>
                     <table>
                         {{- $pages := where site.RegularPages "Type" "locations" -}}

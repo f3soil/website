@@ -91,10 +91,6 @@ em.fineprint {
   text-shadow: 2px 2px 3px #dc6d3d;
 }
 
-#menu li.purple a {
-  text-shadow: 2px 2px 3px #25256a;
-}
-
 #main > header {
   background-attachment: initial; !important
 }
