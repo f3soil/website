@@ -23,11 +23,11 @@ ao:
   schedule:
     tuesday:
       type: Bootcamp
-      start: 05:30
+      start: 05:00
       duration: 45m
     thursday:
       type: Bootcamp
-      start: 05:30
+      start: 05:00
       duration: 45m
 ---
 You don't go to The Store to get new clothes, just a good old-fashioned beatdown.
