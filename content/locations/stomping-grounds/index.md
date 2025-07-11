@@ -25,10 +25,6 @@ ao:
       type: Bootcamp
       start: 05:30
       duration: 45m
-    friday:
-      type: Bootcamp
-      start: 05:30
-      duration: 45m
 ---
 Just because workouts are held at Bicentennial Park, it doesn't mean all exercises require 200 reps.
 But don't be surprised if 200 makes a few appearances here and there.
