@@ -39,8 +39,8 @@ title = "The Stomping Grounds (Belleville)"
 sector = 'black'
 
 [[params.menu.main]]
-url = '/locations/schon/'
-title = "Black Ops: Schon Park (Glen Carbon)"
+url = '/locations/absoluschon/'
+title = "Absoluschon (Glen Carbon)"
 sector = 'orange'
 
 [[params.menu.main]]
