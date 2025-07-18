@@ -1,12 +1,12 @@
 ---
-title: 'Black Ops: Schon Park'
+title: Absoluschon
 date: 2025-02-01T19:15:00-06:00
 ao:
   sector: Orange
-  name: 'Black Ops: Schon Park'
+  name: Absoluschon
   location_name: Ray M. Schon Park
   city: Glen Carbon
-  launched: February 7, 2025
+  launched: July 18, 2025
   q: Bambi
   place: https://maps.app.goo.gl/x5wZcoQx4N3iB4MB9
   parking:
@@ -22,5 +22,5 @@ ao:
       start: 05:15
       duration: 45m
 ---
-This is a "Black Ops" location which is sort of like a "beta test" to see if there is demand for F3 in a new location.
-Come join us and help build something to serve your community!
+Named after Bambi's favorite F3 exercise, Absolutions, the Schon Park Black Ops is now known as AO Absoluschon!
+Come join us to get in better shape physically and mentally so you can better serve your family and community!
