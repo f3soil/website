@@ -21,6 +21,6 @@ ao:
     sunday:
       type: Ruck
       start: 06:00
-      duration: 90m
+      duration: 60m
 ---
 AO Nomad is focused on providing the option for a long Ruck.
