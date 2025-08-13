@@ -10,8 +10,8 @@ ao:
   q: Chief Choppa
   place: https://maps.app.goo.gl/N5B77PZHCPXrzeqR9
   parking:
-    lat: 38.689429584448796
-    lon: -89.96872041084244
+    lat: 38.688836367499135
+    lon: -89.96829159184047
   flag:
     lat: 38.68910714027006
     lon: -89.96825872227298
