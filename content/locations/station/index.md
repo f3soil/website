@@ -23,7 +23,7 @@ ao:
   flag:
     lat: 38.5878940413285
     lon: -89.90712814773141
-  map_embed: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4093.240336063554!2d-89.90964942407801!3d38.58769277179191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2sus!4v1762224798127!5m2!1sen!2sus
+  map_embed: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1909.5643599051202!2d-89.90824125150742!3d38.587686204441376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDM1JzE1LjciTiA4OcKwNTQnMjUuNSJX!5e1!3m2!1sen!2sus!4v1762225268543!5m2!1sen!2sus
   schedule:
     monday:
       type: Bootcamp
