@@ -3,7 +3,6 @@ title: The Mine
 date: 2023-01-09T20:27:34-06:00
 image: ao_mine.jpg
 ao:
-  sector: Orange
   name: The Mine
   location_name: Drost Park
   city: Maryville

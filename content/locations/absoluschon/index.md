@@ -3,7 +3,6 @@ title: Absoluschon
 date: 2025-02-01T19:15:00-06:00
 image: ao_absoluschon.jpg
 ao:
-  sector: Orange
   name: Absoluschon
   location_name: Ray M. Schon Park
   city: Glen Carbon

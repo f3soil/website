@@ -3,7 +3,6 @@ title: Nomad
 date: 2023-06-27T07:00:00-05:00
 image: ao_nomad.jpg
 ao:
-  sector: Black
   name: Nomad
   location_name: Rock Springs Park
   city: O'Fallon

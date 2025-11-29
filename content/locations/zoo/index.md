@@ -3,7 +3,6 @@ title: The Zoo
 date: 2023-01-09T20:27:34-06:00
 image: ao_zoo.jpg
 ao:
-  sector: Orange
   name: The Zoo
   location_name: Tri-Township Park
   city: Troy

@@ -12,13 +12,10 @@
             <section>
                 <div id="details" class="split">
                     {{- $root := . -}}
-                    {{- range $sector := collections.Slice "Black" "Orange" -}}
-                    <h3>{{ $sector }} Sector</h3>
                     <table>
                         {{- $pages := where site.RegularPages "Type" "locations" -}}
                         {{- $paginator := $root.Paginate $pages.ByTitle 100 -}}
-                        {{- range sort $root.Paginator.Pages ".Params.ao.sector" -}}
-                        {{- if eq .Params.ao.sector $sector -}}
+                        {{- range $root.Paginator.Pages -}}
                         <tr>
                             <th colspan="7"><a href="{{ .Permalink }}">{{ .Params.ao.name }}</a> ({{ .Params.ao.city }}, IL)</th>
                         </tr>
@@ -42,9 +39,7 @@
                         </tr>
                         <tr><td></td></tr>
                         {{- end -}}
-                        {{- end -}}
                     </table>
-                    {{- end -}}
                 </div>
             </section>
         </div>

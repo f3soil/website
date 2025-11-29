@@ -16,57 +16,46 @@ The circle F3 logo is used with the permission of <a href="https://f3nation.com/
 [[params.menu.main]]
 url = '/locations/'
 title = "Overview"
-sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/nomad/'
 title = "Nomad (O'Fallon)"
-sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/outer-rim/'
 title = "The Outer Rim (Fairview Heights)"
-sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/station/'
 title = "The Station (O'Fallon)"
-sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/stomping-grounds/'
 title = "The Stomping Grounds (Belleville)"
-sector = 'black'
 
 [[params.menu.main]]
 url = '/locations/absoluschon/'
 title = "Absoluschon (Glen Carbon)"
-sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/iron-horse/'
 title = "The Iron Horse (St. Jacob)"
-sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/mine/'
 title = "The Mine (Maryville)"
-sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/smokestack/'
 title = "The Smokestack (Collinsville)"
-sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/store/'
 title = "The Store (Edwardsville)"
-sector = 'orange'
 
 [[params.menu.main]]
 url = '/locations/zoo/'
 title = "The Zoo (Troy)"
-sector = 'orange'
 
 [params.one]
 enable = true
