@@ -4,6 +4,7 @@ date: 2023-06-27T07:00:00-05:00
 image: ao_nomad.jpg
 ao:
   name: Nomad
+  sort_name: Nomad
   location_name: Rock Springs Park
   city: O'Fallon
   launched: June 27, 2023

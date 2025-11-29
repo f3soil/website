@@ -4,6 +4,7 @@ date: 2023-01-09T20:27:34-06:00
 image: ao_station.jpg
 ao:
   name: The Station
+  sort_name: Station
   location_name: O'Fallon Community Park
   city: O'Fallon
   launched: October 17, 2022

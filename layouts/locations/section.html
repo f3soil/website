@@ -15,7 +15,7 @@
                     <table>
                         {{- $pages := where site.RegularPages "Type" "locations" -}}
                         {{- $paginator := $root.Paginate $pages.ByTitle 100 -}}
-                        {{- range $root.Paginator.Pages -}}
+                        {{- range sort $root.Paginator.Pages ".Params.ao.sort_name" -}}
                         <tr>
                             <th colspan="7"><a href="{{ .Permalink }}">{{ .Params.ao.name }}</a> ({{ .Params.ao.city }}, IL)</th>
                         </tr>

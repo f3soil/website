@@ -4,6 +4,7 @@ date: 2023-01-09T20:27:34-06:00
 image: ao_stomping_grounds.jpg
 ao:
   name: The Stomping Grounds
+  sort_name: Stomping Grounds
   location_name: Bicentennial Park
   city: Belleville
   launched: April 15, 2022

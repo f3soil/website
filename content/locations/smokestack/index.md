@@ -2,7 +2,8 @@
 title: 'The Smokestack'
 date: 2024-01-10T19:15:00-06:00
 ao:
-  name: 'The Smokestack'
+  name: The Smokestack
+  sort_name: Smokestack
   location_name: Woodland Park
   city: Collinsville
   launched: January 21, 2025

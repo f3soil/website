@@ -4,6 +4,7 @@ date: 2023-01-09T20:27:34-06:00
 image: ao_zoo.jpg
 ao:
   name: The Zoo
+  sort_name: Zoo
   location_name: Tri-Township Park
   city: Troy
   launched: November 9, 2022

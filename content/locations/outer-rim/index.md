@@ -4,6 +4,7 @@ date: 2023-01-09T20:27:34-06:00
 image: ao_outer_rim.jpg
 ao:
   name: The Outer Rim
+  sort_name: Outer Rim
   location_name: Moody Park
   city: Fairview Heights
   launched: June 15, 2021

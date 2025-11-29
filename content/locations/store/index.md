@@ -4,6 +4,7 @@ date: 2023-01-09T20:27:34-06:00
 image: ao_store.jpg
 ao:
   name: The Store
+  sort_name: Store
   location_name: Joe Glik Park
   city: Edwardsville
   launched: September 6, 2022

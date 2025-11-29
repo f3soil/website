@@ -4,6 +4,7 @@ date: 2025-02-01T19:15:00-06:00
 image: ao_absoluschon.jpg
 ao:
   name: Absoluschon
+  sort_name: Absoluschon
   location_name: Ray M. Schon Park
   city: Glen Carbon
   launched: July 18, 2025

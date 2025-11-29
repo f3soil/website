@@ -3,7 +3,8 @@ title: 'The Iron Horse'
 date: 2024-01-10T19:15:00-06:00
 image: ao_iron_horse.jpg
 ao:
-  name: 'The Iron Horse'
+  name: The Iron Horse
+  sort_name: Iron Horse
   location_name: St. Jacob Township Park
   city: St. Jacob
   launched: February 29, 2024
