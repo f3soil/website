@@ -18,22 +18,6 @@ url = '/locations/'
 title = "Overview"
 
 [[params.menu.main]]
-url = '/locations/nomad/'
-title = "Nomad (O'Fallon)"
-
-[[params.menu.main]]
-url = '/locations/outer-rim/'
-title = "The Outer Rim (Fairview Heights)"
-
-[[params.menu.main]]
-url = '/locations/station/'
-title = "The Station (O'Fallon)"
-
-[[params.menu.main]]
-url = '/locations/stomping-grounds/'
-title = "The Stomping Grounds (Belleville)"
-
-[[params.menu.main]]
 url = '/locations/absoluschon/'
 title = "Absoluschon (Glen Carbon)"
 
@@ -46,8 +30,24 @@ url = '/locations/mine/'
 title = "The Mine (Maryville)"
 
 [[params.menu.main]]
+url = '/locations/nomad/'
+title = "Nomad (O'Fallon)"
+
+[[params.menu.main]]
+url = '/locations/outer-rim/'
+title = "The Outer Rim (Fairview Heights)"
+
+[[params.menu.main]]
 url = '/locations/smokestack/'
 title = "The Smokestack (Collinsville)"
+
+[[params.menu.main]]
+url = '/locations/station/'
+title = "The Station (O'Fallon)"
+
+[[params.menu.main]]
+url = '/locations/stomping-grounds/'
+title = "The Stomping Grounds (Belleville)"
 
 [[params.menu.main]]
 url = '/locations/store/'
