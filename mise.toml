@@ -1,0 +1,10 @@
+[tools]
+hugo = "latest"
+
+[tasks.build]
+description = "Start Hugo server with live reloading"
+run = "hugo build --buildDrafts"
+
+[tasks.serve]
+description = "Start Hugo server with live reloading"
+run = "hugo server --buildDrafts --openBrowser"
