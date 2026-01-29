@@ -34,8 +34,6 @@ ao:
       start: 06:00
       duration: 60m
 ---
-**Note: The Mine and The Station alternate a monthly convergence on the second Saturday of each month with even months being at The Mine and odd months being at The Station. This means The Station will be closed on the second Saturday of even months.**
-
 Right in the middle of the Metro East, O'Fallon is the perfect place for a beatdown!
 The community park is located in the center of the community, which means easy come and easy go.
 Join us in the gloom as we keep giving it away in the Metro East.
