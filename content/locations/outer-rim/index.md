@@ -8,8 +8,10 @@ ao:
   location_name: Moody Park
   city: Fairview Heights
   launched: June 15, 2021
-  q: Photo Op
+  q: Maggie
   qs:
+    - q: Photo Op
+      term: September 10, 2024 - January 13, 2026
     - q: Rocky Top
       term: February 14, 2023 - September 10, 2024
     - q: Cousin Eddie
