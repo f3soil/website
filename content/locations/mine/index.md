@@ -32,9 +32,9 @@ ao:
       start: 05:30
       duration: 45m
     wednesday:
-      type: Ruck
+      type: Run
       start: 05:30
-      duration: 60m
+      duration: 45m
     saturday:
       type: Bootcamp
       start: 06:00
