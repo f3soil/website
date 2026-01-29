@@ -8,8 +8,10 @@ ao:
   location_name: Drost Park
   city: Maryville
   launched: November 8, 2021
-  q: Fixodent
+  q: Hot Wheels
   qs:
+    - q: Fixodent
+      term: April 2, 2024 - January 3, 2026
     - q: Paperboy
       term: January 21, 2023 - April 2, 2024
     - q: Bambi
