@@ -8,7 +8,7 @@ ao:
   location_name: Ray M. Schon Park
   city: Glen Carbon
   launched: July 18, 2025
-  q: Bambi
+  q: Pinkman
   place: https://maps.app.goo.gl/x5wZcoQx4N3iB4MB9
   parking:
     lat: 38.76510340074287
