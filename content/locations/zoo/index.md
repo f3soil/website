@@ -8,8 +8,10 @@ ao:
   location_name: Tri-Township Park
   city: Troy
   launched: November 9, 2022
-  q: The Thumb
+  q: Gambit
   qs:
+    - q: The Thumb
+      term: October 16, 2024 - ???
     - q: Blue Steel
       term: May 10, 2023 - October 16, 2024
     - q: PonyKeg
