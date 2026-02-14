@@ -11,7 +11,7 @@ ao:
   q: Gambit
   qs:
     - q: The Thumb
-      term: October 16, 2024 - ???
+      term: October 16, 2024 - May 14, 2025
     - q: Blue Steel
       term: May 10, 2023 - October 16, 2024
     - q: PonyKeg
