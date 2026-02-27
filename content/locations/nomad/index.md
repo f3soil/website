@@ -8,7 +8,10 @@ ao:
   location_name: Rock Springs Park
   city: O'Fallon
   launched: June 27, 2023
-  q: Rowengartner
+  q: A-Maize
+  qs:
+    - q: Rowengartner
+      term: June 27, 2023 - April 27, 2025
   place: https://maps.app.goo.gl/vVQXdmemkFR42h4p8
   parking:
     lat: 38.58898502854321
