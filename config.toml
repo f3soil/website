@@ -38,6 +38,10 @@ url = '/locations/outer-rim/'
 title = "The Outer Rim (Fairview Heights)"
 
 [[params.menu.main]]
+url = '/locations/post-office/'
+title = "The Post Office (Mascoutah)"
+
+[[params.menu.main]]
 url = '/locations/smokestack/'
 title = "The Smokestack (Collinsville)"
 
