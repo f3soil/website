@@ -9,6 +9,8 @@ ao:
   city: Glen Carbon
   launched: July 18, 2025
   q: Pinkman
+  qs:
+    - q: Bambi
   place: https://maps.app.goo.gl/x5wZcoQx4N3iB4MB9
   parking:
     lat: 38.76510340074287
