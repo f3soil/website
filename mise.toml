@@ -2,7 +2,7 @@
 hugo = "latest"
 
 [tasks.build]
-description = "Start Hugo server with live reloading"
+description = "Build Hugo site (./docs)"
 run = "hugo build --buildDrafts"
 
 [tasks.serve]
