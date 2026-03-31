@@ -7,7 +7,7 @@ ao:
   location_name: Woodland Park
   city: Collinsville
   launched: January 21, 2025
-  q: Chief Choppa
+  q: Davinci
   place: https://maps.app.goo.gl/N5B77PZHCPXrzeqR9
   parking:
     lat: 38.688836367499135
