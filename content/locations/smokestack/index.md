@@ -8,6 +8,9 @@ ao:
   city: Collinsville
   launched: January 21, 2025
   q: Davinci
+  qs:
+    - q: Chief Choppa
+      term: January 21, 2025 - March 24, 2026
   place: https://maps.app.goo.gl/N5B77PZHCPXrzeqR9
   parking:
     lat: 38.688836367499135
