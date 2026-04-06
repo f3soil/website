@@ -81,7 +81,7 @@ enable = true
 
 [[params.two.section]]
 # https://www.zeemaps.com/map?group=4619598
-img = "img/ao_map.png"
+img = "img/ao_map2.png"
 title = 'Where are the workouts held?'
 body = '''
 Our locations are listed under the Locations menu in the upper-right.
