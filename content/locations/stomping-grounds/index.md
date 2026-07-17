@@ -8,8 +8,10 @@ ao:
   location_name: Bicentennial Park
   city: Belleville
   launched: April 15, 2022
-  q: Mustang Sally
+  q: Roscoe
   qs:
+    - q: Mustang Sally
+      term: July 30, 2022 - July 15, 2026
     - q: Roscoe
       term: April 15, 2022 - July 29, 2022
   place: https://goo.gl/maps/Rx9zRTsFn7WYDMCK7
