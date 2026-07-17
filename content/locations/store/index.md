@@ -11,7 +11,7 @@ ao:
   q: Bambi
   qs:
     - q: Flo-Rida
-      term: January 17, 2023 - ???
+      term: January 17, 2023 - January 28, 2025
     - q: Wire Biter
       term: September 6, 2022 - January 17, 2023
   place: https://goo.gl/maps/baR3yweKaFma4bWF7
