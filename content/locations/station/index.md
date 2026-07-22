@@ -29,10 +29,10 @@ ao:
       type: Bootcamp
       start: 05:30
       duration: 45m
-    saturday:
-      type: Bootcamp
-      start: 06:00
-      duration: 60m
+    
+      
+      
+      
 ---
 Right in the middle of the Metro East, O'Fallon is the perfect place for a beatdown!
 The community park is located in the center of the community, which means easy come and easy go.
