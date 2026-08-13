@@ -16,7 +16,7 @@ ao:
   flag:
     lat: 38.691075
     lon: -89.994513
-  map_embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.04063444090957!2d-89.994369354696!3d38.69099582133891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8875ff837632e55b%3A0xbbfbf3d9a98a0975!2sGood%20Shepherd%20Lutheran%20Church!5e1!3m2!1sen!2sus!4v1786636954297!5m2!1sen!2sus](https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d966.0808607383308!2d-89.99517173034336!3d38.69102604500591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDQxJzI3LjciTiA4OcKwNTknNDAuMyJX!5e1!3m2!1sen!2sus!4v1786639945020!5m2!1sen!2sus
+  map_embed: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d966.0808607383308!2d-89.99517173034336!3d38.69102604500591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDQxJzI3LjciTiA4OcKwNTknNDAuMyJX!5e1!3m2!1sen!2sus!4v1786639945020!5m2!1sen!2sus
   schedule:
     monday:
       type: Bootcamp
