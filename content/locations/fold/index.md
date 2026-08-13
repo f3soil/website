@@ -9,7 +9,7 @@ ao:
   city: Collinsville
   launched: August 10, 2026
   q: Pony Keg
-  place: https:https://maps.app.goo.gl/kJJVsG3AtPBq4zQ77
+  place: https://maps.app.goo.gl/kJJVsG3AtPBq4zQ77
   parking:
     lat: 38.691018
     lon: -89.994174
