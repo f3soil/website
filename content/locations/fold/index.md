@@ -1,7 +1,7 @@
 ---
 title: The Fold
 date: 2026-08-10T05:30:00-06:00
-image: 
+image: ao_fold1.jpeg
 ao:
   name: The Fold
   sort_name: Fold
