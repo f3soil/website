@@ -93,7 +93,7 @@ em.fineprint {
 
 #main > header {
   background-attachment: initial; !important
-  min-height: 100vh;
+  min-height: 700px;
   background-size: cover;
   background-position: center bottom;
 }
