@@ -93,10 +93,7 @@ em.fineprint {
 
 #main > header {
   background-attachment: initial; !important
-  min-height: 700px;
-  background-size: cover;
-  background-position: center center;
-}
+  }
 
 #header nav > ul > li > a.menuToggle span {
   display: inline !important;
